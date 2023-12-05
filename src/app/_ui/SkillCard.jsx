@@ -1,16 +1,27 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function SkillCard({ src, label }) {
+  const variants = {
+    hidden: { opacity: 0, scale: 0 },
+    show: { opacity: 1, scale: 1 },
+  };
+
   return (
-    <div className="flex flex-col items-center justify-center">
+    <motion.div
+      variants={variants}
+      className="flex flex-col items-center justify-center"
+    >
       <Image
         src={"/photo/skills/" + src + "-icon.svg"}
         alt={src}
-        width={100}
-        height={100}
+        width={50}
+        height={50}
       />
-      <h4 className="text-xl font-semibold mt-3">{label}</h4>
-    </div>
+      <h4 className="text-base font-semibold mt-1">{label}</h4>
+    </motion.div>
   );
 }

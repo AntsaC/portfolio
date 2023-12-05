@@ -19,7 +19,7 @@ const workflows = [
 
 export default function Workflow() {
   return (
-    <div className="mt-6">
+    <div className="mt-8">
       <Subtitle text={"Workflow"} />
       <div className="flex justify-around p-8">
         {workflows.map((workflow, index) => (
