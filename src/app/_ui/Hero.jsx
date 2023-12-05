@@ -4,19 +4,19 @@ import CrafContainer from "./CrafItems";
 
 export default function Hero() {
   return (
-    <div className="flex justify-around py-10">
+    <div className="flex justify-around py-10 px-8">
       <div className="text-slate-200 relative">
         <p className="text-2xl">
           Hi there, I'm{" "}
           <span className="text-3xl">
             &lt;&gt;
-            <span className="text-sub_title font-bold"> Antsa Fiderana </span>
+            <span className="text-emerald-400 font-bold"> Antsa Fiderana </span>
             &lt;/&gt;
           </span>
         </p>
         <div className="text-6xl mt-6">
           <h1>Full Stack Developper</h1>
-          <h1 className="mt-1">Passionate about crafting</h1>
+          <h1 className="mt-2">Passionate about crafting</h1>
         </div>
         <CrafContainer />
         <p class="text-gray-800 leading-6 my-4">
@@ -27,8 +27,9 @@ export default function Hero() {
           View resume &rarr;
         </button>
       </div>
-      <div>
+      <div className="border-1  border-green-500 ring-2 shadow-md ring-green-500 rounded transform rotate-3">
         <Image
+          className="transform -rotate-3 rounded-sm"
           src="/photo/profile.jpg"
           alt="Profile"
           width={450}

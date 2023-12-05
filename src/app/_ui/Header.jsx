@@ -9,29 +9,25 @@ export default function Header() {
         </div>
         <nav>
           <ul class="flex space-x-4">
-            <li>
-              <a href="#" class="hover:underline">
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="#" class="hover:underline">
-                Projects
-              </a>
-            </li>
-            <li>
-              <a href="#" class="hover:underline">
-                Services
-              </a>
-            </li>
-            <li>
-              <a href="#" class="hover:underline">
-                Contact
-              </a>
-            </li>
+            <NavLink text={"Home"} />
+            <NavLink text={"Projects"} />
+            <NavLink text={"Contact"} />
           </ul>
         </nav>
       </div>
     </header>
+  );
+}
+
+function NavLink({ text }) {
+  return (
+    <li>
+      <a
+        href="#"
+        class="hover:text-emerald-400  transition-all duration-300 ease-in-out"
+      >
+        {text}
+      </a>
+    </li>
   );
 }

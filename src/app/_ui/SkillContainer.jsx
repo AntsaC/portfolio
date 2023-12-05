@@ -26,7 +26,7 @@ export default function SkillContainer({ type, skills }) {
       animate={isInView ? "show" : "hidden"}
     >
       <h5
-        className="text-xl absolute left-1/2 transform -translate-x-1/2 text-sub_title bg-background px-1"
+        className="text-xl absolute left-1/2 transform -translate-x-1/2 text-emerald-600 bg-background px-1"
         style={{ top: -18 }}
       >
         {type}

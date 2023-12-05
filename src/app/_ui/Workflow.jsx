@@ -5,15 +5,18 @@ import WorkflowCard from "./WorkflowCard";
 const workflows = [
   {
     workflow: "Agile/Scrum methodology",
-    description: "Lorem",
+    description:
+      "An iterative and flexible approach to software development, based on sprint",
   },
   {
     workflow: "CI/CD pipeline",
-    description: "Lorem",
+    description:
+      "A set of automated processes designed to ensure efficient and consistent software development, testing and deployment, in order to have a rapid time to market ",
   },
   {
     workflow: "Git feature branching",
-    description: "Lorem",
+    description:
+      "A practice where developers create a separate branch in a Git repository to work on a specific feature or task",
   },
 ];
 
