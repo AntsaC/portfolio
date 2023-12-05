@@ -1,5 +1,6 @@
 import Hero from "./_ui/Hero";
 import Skills from "./_ui/Skills";
+import TopicSection from "./_ui/TopicSection";
 import Workflow from "./_ui/Workflow";
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <Skills />
       <Workflow />
+      <TopicSection />
     </main>
   );
 }

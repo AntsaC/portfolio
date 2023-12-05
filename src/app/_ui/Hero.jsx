@@ -7,12 +7,12 @@ export default function Hero() {
     <div className="flex justify-around py-10 px-8">
       <div className="text-slate-200 relative">
         <p className="text-2xl">
-          Hi there, I'm{" "}
-          <span className="text-3xl">
-            &lt;&gt;
-            <span className="text-emerald-400 font-bold"> Antsa Fiderana </span>
-            &lt;/&gt;
+          Hi there, I'm &lt;&gt;
+          <span className="text-3xl text-emerald-400 font-bold">
+            {" "}
+            Antsa Fiderana{" "}
           </span>
+          &lt;/&gt;
         </p>
         <div className="text-6xl mt-6">
           <h1>Full Stack Developper</h1>

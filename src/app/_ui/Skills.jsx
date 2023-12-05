@@ -1,5 +1,4 @@
 import React from "react";
-import SkillCard from "./SkillCard";
 import SkillContainer from "./SkillContainer";
 import Subtitle from "./shared/Subtitle";
 
@@ -13,8 +12,9 @@ const frontSkills = [
     label: "Next 13",
   },
   {
-    src: "reactjs",
+    src: "flutter",
     label: "Flutter",
+    extension: "png",
   },
 ];
 

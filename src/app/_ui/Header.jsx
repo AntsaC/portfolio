@@ -11,6 +11,7 @@ export default function Header() {
           <ul class="flex space-x-4">
             <NavLink text={"Home"} />
             <NavLink text={"Projects"} />
+            <NavLink text={"Experiences"} />
             <NavLink text={"Contact"} />
           </ul>
         </nav>
