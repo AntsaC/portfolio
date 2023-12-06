@@ -7,7 +7,7 @@ export default function Hero() {
     <div className="flex flex-col lg:flex-row content-around justify-around py-2 lg:py-10 px-2 lg:px-8 gap-12">
       <div className="text-slate-200 relative">
         <p className="text-2xl">
-          Hi there, I'm &lt;&gt;
+          Hi there, I&apos;m &lt;&gt;
           <span className="text-3xl text-emerald-400 font-bold">
             {" "}
             Antsa Fiderana{" "}
@@ -20,7 +20,7 @@ export default function Hero() {
         </div>
         <CrafContainer />
 
-        <button class=" bg-green-600 hover:bg-transparent hover:scale-105 border border-green-500 text-white py-2 px-4 transition-all duration-300 ease-in-out mt-4 lg:mt-28">
+        <button className=" bg-green-600 hover:bg-transparent hover:scale-105 border border-green-500 text-white py-2 px-4 transition-all duration-300 ease-in-out mt-4 lg:mt-28">
           View resume &rarr;
         </button>
       </div>

@@ -2,13 +2,13 @@ import React from "react";
 
 export default function Header() {
   return (
-    <header class=" p-4 px-10 text-white">
-      <div class="container mx-auto flex justify-between items-center">
+    <header className=" p-4 px-10 text-white">
+      <div className="container mx-auto flex justify-between items-center">
         <div>
-          <h1 class="text-2xl font-bold">#Ina_leka_zao</h1>
+          <h1 className="text-2xl font-bold">#Ina_leka_zao</h1>
         </div>
         <nav>
-          <ul class="flex space-x-4">
+          <ul className="flex space-x-4">
             <NavLink text={"Home"} />
             <NavLink text={"Projects"} />
             <NavLink text={"Experiences"} />
@@ -25,7 +25,7 @@ function NavLink({ text }) {
     <li>
       <a
         href="#"
-        class="hover:text-emerald-400  transition-all duration-300 ease-in-out"
+        className="hover:text-emerald-400  transition-all duration-300 ease-in-out"
       >
         {text}
       </a>

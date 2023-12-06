@@ -32,7 +32,8 @@ const topics = [
   "Docker",
   "UML",
   "Typescript",
-  "Design",
+  "Design pattern",
+  "SEO",
 ];
 
 export default function TopicSection() {
@@ -48,7 +49,7 @@ export default function TopicSection() {
       </div>
       <div>
         <Subtitle text={"Topics that I know"} />
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 mt-4">
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 mt-5">
           {topics.map((topic, index) => (
             <TopicItem key={index} topic={topic} />
           ))}
@@ -60,7 +61,7 @@ export default function TopicSection() {
 
 function TopicItem({ topic }) {
   return (
-    <div className="border border-emerald-400 rounded-3xl p-2 text-center text-white">
+    <div className="border border-emerald-400 rounded-3xl text-sm p-2 text-center text-white">
       {topic}
     </div>
   );
