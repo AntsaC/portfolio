@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "@uidotdev/usehooks": "^2.4.1",
+    "embla-carousel-autoplay": "^8.0.0-rc15",
+    "embla-carousel-react": "^8.0.0-rc15",
     "framer-motion": "^10.16.12",
     "next": "14.0.3",
     "react": "^18",

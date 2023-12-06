@@ -25,13 +25,13 @@ export default function Hero() {
           View resume &rarr;
         </button>
       </div>
-      <div className="border-1  border-green-500 ring-2 shadow-md ring-green-500 rounded transform rotate-3 h-fit">
+      <div className="m-auto border-1  border-green-500 ring-2 shadow-md ring-green-500 rounded transform rotate-3 h-fit w-fit">
         <Image
           className="transform -rotate-3 rounded-sm"
           src="/photo/profile.jpg"
           alt="Profile"
-          width={450}
-          height={500}
+          width={350}
+          height={350}
         />
       </div>
     </div>
