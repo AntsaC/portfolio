@@ -2,11 +2,11 @@
 
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { useMediaQuery } from "@uidotdev/usehooks";
+import { useMediaQuery } from "react-responsive";
 
 export default function Header() {
   const [togle, setTogle] = useState("hidden");
-  const isSmallScreen = useMediaQuery("only screen and (max-width : 768px)");
+  const isSmallDevice = useMediaQuery({ query: "(max-width: 768px)" });
 
   const variants = {
     show: {
@@ -45,7 +45,7 @@ export default function Header() {
       </div>
       <motion.div
         initial="hidden"
-        animate={isSmallScreen ? togle : { opacity: 1 }}
+        animate={isSmallDevice ? togle : { opacity: 1 }}
         variants={variants}
         className="w-full opacity-0 lg:opacity-100 lg:flex lg:items-center lg:w-auto"
       >
