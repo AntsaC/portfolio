@@ -20,7 +20,7 @@ const frontSkills = [
 
 const apiSkills = [
   {
-    src: "reactjs",
+    src: "rest",
     label: "REST",
   },
   {
@@ -28,8 +28,9 @@ const apiSkills = [
     label: "GraphQL",
   },
   {
-    src: "reactjs",
+    src: "websocket",
     label: "Websocket",
+    style: { fill: "red" },
   },
 ];
 
@@ -43,7 +44,7 @@ const backSkills = [
     label: "Symfony 6",
   },
   {
-    src: "reactjs",
+    src: "nodejs",
     label: "Node",
   },
 ];
@@ -58,23 +59,23 @@ const databaseSkills = [
     label: "MongoDB",
   },
   {
-    src: "reactjs",
+    src: "redis",
     label: "Redis",
   },
 ];
 
 const serviceSkills = [
   {
-    src: "springio",
-    label: "Kafka",
+    src: "docker",
+    label: "Docker",
   },
   {
-    src: "symfony",
-    label: "Rabbit MQ",
+    src: "kubernetes",
+    label: "Kubernetes",
   },
   {
-    src: "reactjs",
-    label: "Firebase",
+    src: "rabbitmq",
+    label: "Rabit MQ",
   },
 ];
 

@@ -4,7 +4,7 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-export default function SkillCard({ src, label, extension = "svg" }) {
+export default function SkillCard({ src, label, style, extension = "svg" }) {
   const variants = {
     hidden: { opacity: 0, scale: 0 },
     show: { opacity: 1, scale: 1 },
@@ -20,6 +20,7 @@ export default function SkillCard({ src, label, extension = "svg" }) {
         alt={src}
         width={50}
         height={50}
+        style={style}
       />
       <h4 className="text-base font-semibold mt-1">{label}</h4>
     </motion.div>

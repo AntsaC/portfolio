@@ -38,7 +38,7 @@ const topics = [
 export default function TopicSection() {
   return (
     <div className="flex justify-around mt-4">
-      <div>
+      <div className="hidden lg:block">
         <Image
           src={"/photo/profile2.jpg"}
           alt="Profile 2"
@@ -48,7 +48,7 @@ export default function TopicSection() {
       </div>
       <div>
         <Subtitle text={"Topics that I know"} />
-        <div className="grid grid-cols-6 gap-4 mt-4">
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 mt-4">
           {topics.map((topic, index) => (
             <TopicItem key={index} topic={topic} />
           ))}
