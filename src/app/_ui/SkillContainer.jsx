@@ -20,7 +20,7 @@ export default function SkillContainer({ type, skills }) {
 
   return (
     <motion.div
-      className="relative border-2 rounded  border-green-700 w-56 h-96"
+      className="relative border-2 rounded  border-green-500 w-56 h-96"
       variants={variants}
       initial="hidden"
       animate={isInView ? "show" : "hidden"}

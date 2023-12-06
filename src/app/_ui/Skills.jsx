@@ -81,7 +81,7 @@ const serviceSkills = [
 
 export default function Skills() {
   return (
-    <div>
+    <div className="mt-3">
       <Subtitle text={"Technologies"} />
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 mt-8 justify-items-center gap-8">
         <SkillContainer skills={frontSkills} type={"Frontend"} />

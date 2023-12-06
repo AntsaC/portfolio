@@ -1,9 +1,9 @@
-import { Inter } from "next/font/google";
+import { Raleway } from "next/font/google";
 import "./globals.css";
 import Header from "./_ui/Header";
 import Footer from "./_ui/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Raleway({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Antsa Fiderana - Portfolio",

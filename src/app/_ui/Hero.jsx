@@ -5,22 +5,23 @@ import CrafContainer from "./CrafItems";
 export default function Hero() {
   return (
     <div className="flex flex-col lg:flex-row content-around justify-around py-2 lg:py-10 px-2 lg:px-8 gap-12">
-      <div className="text-slate-200 relative">
-        <p className="text-2xl">
-          Hi there, I&apos;m &lt;&gt;
+      <div className="text-slate-200">
+        <p className="text-2xl md:inline">Hi there, I&apos;m </p>
+        <p className="text-2xl md:inline">
+          &lt;&gt;
           <span className="text-3xl text-emerald-400 font-bold">
             {" "}
             Antsa Fiderana{" "}
           </span>
           &lt;/&gt;
         </p>
-        <div className="text-3xl lg:text-6xl mt-6">
+        <div className="text-3xl lg:text-6xl mt-6 font-semibold">
           <h1>Full Stack Developper</h1>
           <h1 className="mt-2">Passionate about crafting</h1>
         </div>
         <CrafContainer />
 
-        <button className=" bg-green-600 hover:bg-transparent hover:scale-105 border border-green-500 text-white py-2 px-4 transition-all duration-300 ease-in-out mt-4 lg:mt-28">
+        <button className=" bg-green-600 hover:bg-transparent hover:scale-105 border border-green-500 text-white py-2 px-4 transition-all duration-300 ease-in-out mt-6 lg:mt-28">
           View resume &rarr;
         </button>
       </div>
