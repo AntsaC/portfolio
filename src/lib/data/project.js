@@ -12,7 +12,7 @@ const projects = [
     description: "Platform to manage fleets of organisation",
     key: "Jira",
     thumbnail: "backlog.png",
-    tags: ["React", "Symfony 6", "Flutter", "Postgresql"],
+    tags: ["React", "Symfony 6", "Flutter"],
   },
 ];
 
