@@ -23,7 +23,7 @@ export default function ProjectCard({ project }) {
           {project.tags.map((t) => (
             <div
               key={t}
-              className="border border-emerald-400 rounded-3xl text-xs mr-2 p-2 px-4"
+              className="border border-emerald-400 rounded-3xl text-xs mr-1 p-2 px-2 lg:px-4"
             >
               {t}
             </div>

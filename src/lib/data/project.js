@@ -5,14 +5,14 @@ const projects = [
       "A simple clone of the Jira software, a plateform to manage agile projects",
     key: "Jira",
     thumbnail: "backlog.png",
-    tags: ["React", "Symfony 6", "Postgresql"],
+    tags: ["React", "Symfony", "Postgresql"],
   },
   {
     name: "Fleet management",
     description: "Platform to manage fleets of organisation",
     key: "Jira",
     thumbnail: "backlog.png",
-    tags: ["React", "Symfony 6", "Flutter"],
+    tags: ["React", "Symfony", "Flutter"],
   },
 ];
 
