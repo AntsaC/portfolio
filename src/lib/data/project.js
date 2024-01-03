@@ -10,8 +10,8 @@ const projects = [
   {
     name: "Fleet management",
     description: "Platform to manage fleets of organisation",
-    key: "Jira",
-    thumbnail: "backlog.png",
+    key: "Fleet",
+    thumbnail: "Fond.png",
     tags: ["React", "Symfony", "Flutter"],
   },
 ];

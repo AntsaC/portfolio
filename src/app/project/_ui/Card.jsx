@@ -3,13 +3,14 @@ import Image from "next/image";
 export default function ProjectCard({ project }) {
   return (
     <div className="bg-slate-50 border rounded p-2 flex flex-col ">
-      <Image
-        alt="Project thumbnail"
-        src={"/photo/projects/" + project.key + "/" + project.thumbnail}
-        width={200}
-        height={100}
-        layout="responsive"
-      />
+      <div className="h-44 lg:h-64 relative">
+        <Image
+          alt="Project thumbnail"
+          src={"/photo/projects/" + project.key + "/" + project.thumbnail}
+          fill
+          objectFit="cover"
+        />
+      </div>
       <div className="p-2">
         <h4 className=" font-bold text-xl mt-1 text-emerald-400">
           {project.name}
