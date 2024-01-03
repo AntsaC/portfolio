@@ -50,8 +50,8 @@ export default function Header() {
         className="w-full opacity-0 lg:opacity-100 lg:flex lg:items-center lg:w-auto"
       >
         <div className="text-sm lg:flex-grow">
-          <NavLink text={"Home"} />
-          <NavLink text={"Projects"} />
+          <NavLink text={"Home"} href="/" />
+          <NavLink text={"Projects"} href="/project" />
           <NavLink text={"Experiences"} />
         </div>
       </motion.div>
@@ -59,10 +59,10 @@ export default function Header() {
   );
 }
 
-function NavLink({ text }) {
+function NavLink({ text, href }) {
   return (
     <a
-      href="#responsive-header"
+      href={href}
       className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 transition-all duration-200 ease-in-out hover:text-white mr-4 hover:border-b hover:border-teal-200"
     >
       {text}
