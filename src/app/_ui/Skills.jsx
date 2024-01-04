@@ -8,8 +8,11 @@ const frontSkills = [
     label: "React",
   },
   {
-    src: "reactjs",
+    src: "next",
     label: "Next 13",
+    style: {
+      background: "white",
+    },
   },
   {
     src: "flutter",
@@ -36,8 +39,8 @@ const apiSkills = [
 
 const backSkills = [
   {
-    src: "springio",
-    label: "Spring boot 3",
+    src: "laravel",
+    label: "Laravel",
   },
   {
     src: "symfony",
@@ -70,12 +73,12 @@ const serviceSkills = [
     label: "Docker",
   },
   {
-    src: "kubernetes",
-    label: "Kubernetes",
+    src: "git",
+    label: "Git",
   },
   {
-    src: "rabbitmq",
-    label: "Rabit MQ",
+    src: "github",
+    label: "Github",
   },
 ];
 
@@ -88,7 +91,7 @@ export default function Skills() {
         <SkillContainer skills={apiSkills} type={"API"} />
         <SkillContainer skills={backSkills} type={"Backend"} />
         <SkillContainer skills={databaseSkills} type={"Database"} />
-        <SkillContainer skills={serviceSkills} type={"Service"} />
+        <SkillContainer skills={serviceSkills} type={"Tools"} />
       </div>
     </div>
   );
