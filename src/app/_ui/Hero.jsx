@@ -20,10 +20,17 @@ export default function Hero() {
           <h1 className="mt-2">Passionate about crafting</h1>
         </div>
         <CrafContainer />
-
-        <button className=" bg-green-600 hover:bg-transparent hover:scale-105 border border-green-500 text-white py-2 px-4 transition-all duration-300 ease-in-out mt-6 lg:mt-28">
-          View resume &rarr;
-        </button>
+        <div className="flex flex-col lg:flex-row text-center">
+          <a className=" bg-green-600 hover:bg-transparent hover:scale-105 border border-green-500 text-white py-2 px-4 transition-all duration-300 ease-in-out mt-6 lg:mt-28">
+            View resume &rarr;
+          </a>
+          <a
+            href="/project"
+            className=" bg-transparent hover:scale-105 border border-green-500 text-white py-2 px-4 transition-all duration-300 ease-in-out mt-6 lg:mt-28 lg:ml-8"
+          >
+            Explore projects
+          </a>
+        </div>
       </div>
       <div className="m-auto border-1  border-green-500 ring-2 shadow-md ring-green-500 rounded transform rotate-3 h-fit w-fit">
         <Image
