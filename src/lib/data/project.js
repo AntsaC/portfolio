@@ -53,7 +53,7 @@ const projects = [
     description:
       "Platform (a web app with mobile app) to manage fleets of companies",
     key: "Fleet",
-    thumbnail: "fond.png",
+    thumbnail: "fond.PNG",
     tags: ["React", "Symfony", "Flutter"],
     features: [
       "Authentication based on JWT",
@@ -83,7 +83,7 @@ const projects = [
     name: "Portfolio",
     description: "My portfolio as a full stack developper",
     key: "Portfolio",
-    thumbnail: "fond.png",
+    thumbnail: "fond.PNG",
     code: [
       {
         label: "Github",
