@@ -53,7 +53,7 @@ const projects = [
     description:
       "Platform (a web app with mobile app) to manage fleets of companies",
     key: "Fleet",
-    thumbnail: "Fond.png",
+    thumbnail: "fond.png",
     tags: ["React", "Symfony", "Flutter"],
     features: [
       "Authentication based on JWT",
@@ -77,13 +77,13 @@ const projects = [
       "Websocket",
       "Firebase",
     ],
-    images: ["Fond.PNG", "journal.PNG", "rapport.PNG"],
+    images: ["fond.PNG", "journal.PNG", "rapport.PNG"],
   },
   {
     name: "Portfolio",
     description: "My portfolio as a full stack developper",
     key: "Portfolio",
-    thumbnail: "Fond.png",
+    thumbnail: "fond.png",
     code: [
       {
         label: "Github",
@@ -93,7 +93,7 @@ const projects = [
     tags: ["Next JS", "Tailwind CSS"],
     features: ["View my resume", "Projects catalog"],
     technologies: ["Next JS", "Tailwind CSS"],
-    images: ["Fond.PNG", "Projects.PNG", "Techno.PNG"],
+    images: ["fond.PNG", "Projects.PNG", "Techno.PNG"],
   },
 ];
 

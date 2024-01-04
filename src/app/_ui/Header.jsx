@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { useMediaQuery } from "react-responsive";
+import Link from "next/link";
 
 export default function Header() {
   const [togle, setTogle] = useState("hidden");
@@ -46,13 +47,13 @@ export default function Header() {
       <motion.div
         initial="hidden"
         animate={isSmallDevice ? togle : { opacity: 1 }}
-        variants={variants}
         className="w-full opacity-0 lg:opacity-100 lg:flex lg:items-center lg:w-auto"
+        variants={variants}
       >
         <div className="text-sm lg:flex-grow">
           <NavLink text={"Home"} href="/" />
           <NavLink text={"Projects"} href="/project" />
-          <NavLink text={"Experiences"} />
+          <NavLink text={"Experiences"} href="/" />
         </div>
       </motion.div>
     </nav>
@@ -61,11 +62,11 @@ export default function Header() {
 
 function NavLink({ text, href }) {
   return (
-    <a
+    <Link
       href={href}
       className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 transition-all duration-200 ease-in-out hover:text-white mr-4 hover:border-b hover:border-teal-200"
     >
       {text}
-    </a>
+    </Link>
   );
 }

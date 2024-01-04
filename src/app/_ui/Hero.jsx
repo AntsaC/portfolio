@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import CrafContainer from "./CrafItems";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -24,12 +25,12 @@ export default function Hero() {
           <a className=" bg-green-600 hover:bg-transparent hover:scale-105 border border-green-500 text-white py-2 px-4 transition-all duration-300 ease-in-out mt-6 lg:mt-28">
             View resume &rarr;
           </a>
-          <a
+          <Link
             href="/project"
             className=" bg-transparent hover:scale-105 border border-green-500 text-white py-2 px-4 transition-all duration-300 ease-in-out mt-6 lg:mt-28 lg:ml-8"
           >
             Explore projects
-          </a>
+          </Link>
         </div>
       </div>
       <div className="m-auto border-1  border-green-500 ring-2 shadow-md ring-green-500 rounded transform rotate-3 h-fit w-fit">

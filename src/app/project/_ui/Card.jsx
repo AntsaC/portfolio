@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function ProjectCard({ project }) {
   return (
@@ -13,7 +14,7 @@ export default function ProjectCard({ project }) {
       </div>
       <div className="p-2">
         <h4 className=" font-bold text-xl mt-1 text-emerald-400 hover:text-emerald-700 transition-all duration-100">
-          <a href={"project/" + project.key}>{project.name} &rarr;</a>
+          <Link href={"project/" + project.key}>{project.name} &rarr;</Link>
         </h4>
         <p className="text-gray-500 text-base mt-1 h-12">
           {project.description}
@@ -30,12 +31,12 @@ export default function ProjectCard({ project }) {
             </div>
           ))}
         </div>
-        <a
+        <Link
           className="bg-green-600 hover:bg-transparent hover:text-green-500 border text-xs border-green-500 text-white py-2 px-4 transition-all duration-300 ease-in-out hidden md:inline-block "
           href={"project/" + project.key}
         >
           View
-        </a>
+        </Link>
       </div>
     </div>
   );
