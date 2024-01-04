@@ -23,9 +23,9 @@ export default function Header() {
   return (
     <nav className=" flex items-center justify-between flex-wrap p-6">
       <div className="flex items-center  text-white mr-6">
-        <span className="font-semibold text-xl tracking-tight">
+        <Link href="/" className="font-semibold text-xl tracking-tight">
           Ina_Leka_Zao
-        </span>
+        </Link>
       </div>
       <div className="block lg:hidden">
         <button

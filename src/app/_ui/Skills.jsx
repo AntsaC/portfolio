@@ -33,7 +33,9 @@ const apiSkills = [
   {
     src: "websocket",
     label: "Websocket",
-    style: { fill: "red" },
+    style: {
+      background: "white",
+    },
   },
 ];
 
@@ -79,6 +81,9 @@ const serviceSkills = [
   {
     src: "github",
     label: "Github",
+    style: {
+      background: "white",
+    },
   },
 ];
 

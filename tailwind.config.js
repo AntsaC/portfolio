@@ -16,7 +16,7 @@ module.exports = {
         base: "#FFF8DC",
         title: "lightsteelblue",
         sub_title: "#0C7075",
-        background: "#072e33",
+        background: "#022424",
       },
     },
   },

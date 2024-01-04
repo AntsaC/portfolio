@@ -11,14 +11,13 @@ const topics = [
   "Doctrine",
   "Twig",
   "Clean code",
-  "Hexagonal arch",
-  "CQRS",
   "Scrum",
   "CI/CD",
   "Microservice",
   "SOLID",
   "DRY",
   "Redux",
+  "RTK",
   "Firebase",
   "Refactoring",
   "Responsive",
@@ -58,7 +57,7 @@ export default function TopicSection() {
 
 export function TopicItem({ topic }) {
   return (
-    <div className="border border-emerald-400 rounded-3xl text-sm p-2 text-center text-white">
+    <div className="border border-emerald-400 rounded-3xl text-xs p-2 text-center text-white">
       {topic}
     </div>
   );

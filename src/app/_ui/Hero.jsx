@@ -24,13 +24,13 @@ export default function Hero() {
         <div className="flex flex-col lg:flex-row text-center">
           <a
             href="https://cvdesignr.com/p/647e9e7f67ec0"
-            className=" bg-green-600 hover:bg-transparent hover:scale-105 border border-green-500 text-white py-2 px-4 transition-all duration-300 ease-in-out mt-6 lg:mt-28"
+            className=" bg-green-600 hover:bg-transparent hover:scale-105 border border-emerald-400 text-white py-3  px-4 transition-all duration-300 ease-in-out mt-6 lg:mt-28"
           >
             View resume &rarr;
           </a>
           <Link
             href="/project"
-            className=" bg-transparent hover:scale-105 border border-green-500 text-white py-2 px-4 transition-all duration-300 ease-in-out mt-6 lg:mt-28 lg:ml-8"
+            className=" bg-transparent hover:scale-105 border border-emerald-400 text-white py-3 px-4 transition-all duration-300 ease-in-out mt-6 lg:mt-28 lg:ml-8"
           >
             Explore projects
           </Link>

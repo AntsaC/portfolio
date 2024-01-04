@@ -22,7 +22,7 @@ export default function SkillCard({ src, label, style, extension = "svg" }) {
         height={50}
         style={style}
       />
-      <h4 className="text-base font-semibold mt-1">{label}</h4>
+      <h4 className="text-slate-50 font-semibold mt-2">{label}</h4>
     </motion.div>
   );
 }
