@@ -53,7 +53,7 @@ const projects = [
     description:
       "Platform (a web app with mobile app) to manage fleets of companies",
     key: "Fleet",
-    thumbnail: "fond.PNG",
+    thumbnail: "map.PNG",
     tags: ["React", "Symfony", "Flutter"],
     features: [
       "Authentication based on JWT",
@@ -77,7 +77,7 @@ const projects = [
       "Websocket",
       "Firebase",
     ],
-    images: ["fond.PNG", "journal.PNG", "rapport.PNG"],
+    images: ["map.PNG", "journal.PNG", "rapport.PNG"],
   },
   {
     name: "Portfolio",
