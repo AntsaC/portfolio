@@ -81,13 +81,19 @@ const projects = [
   },
   {
     name: "Portfolio",
-    description: "My portfolio as full stack developper",
+    description: "My portfolio as a full stack developper",
     key: "Portfolio",
     thumbnail: "Fond.png",
+    code: [
+      {
+        label: "Github",
+        link: "https://github.com/AntsaC/portfolio",
+      },
+    ],
     tags: ["Next JS", "Tailwind CSS"],
     features: ["View my resume", "Projects catalog"],
     technologies: ["Next JS", "Tailwind CSS"],
-    images: ["Fond.PNG", "journal.PNG", "rapport.PNG"],
+    images: ["Fond.PNG", "Projects.PNG", "Techno.PNG"],
   },
 ];
 
