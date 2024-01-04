@@ -59,7 +59,7 @@ export default function TopicSection() {
   );
 }
 
-function TopicItem({ topic }) {
+export function TopicItem({ topic }) {
   return (
     <div className="border border-emerald-400 rounded-3xl text-sm p-2 text-center text-white">
       {topic}
