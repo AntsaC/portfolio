@@ -1,5 +1,4 @@
 "use client";
-import useEmblaCarousel from "embla-carousel-react";
 import "./ImageCarousel.css";
 import Image from "next/image";
 import { useState } from "react";
@@ -8,11 +7,10 @@ const resolveImage = (project, image) =>
   `/photo/projects/${project.key}/${image}`;
 
 export default function ProjectImageCarousel({ project }) {
-  const [emblaRef] = useEmblaCarousel();
   const [image, setImage] = useState(project.images[0]);
 
   const carousel = (
-    <div className="w-full h-80 relative">
+    <div className="w-full h-40 lg:h-80 relative">
       <Image
         alt="Image"
         fill
@@ -39,7 +37,7 @@ export default function ProjectImageCarousel({ project }) {
   );
 
   return (
-    <div className="flex-1 p-8">
+    <div className="flex-1 lg:p-8">
       {carousel}
       {imageList}
     </div>
