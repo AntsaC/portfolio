@@ -83,7 +83,7 @@ const projects = [
     name: "Portfolio",
     description: "My portfolio as a full stack developper",
     key: "Portfolio",
-    thumbnail: "fond.PNG",
+    thumbnail: "hero.PNG",
     code: [
       {
         label: "Github",
@@ -93,7 +93,7 @@ const projects = [
     tags: ["Next JS", "Tailwind CSS"],
     features: ["View my resume", "Projects catalog"],
     technologies: ["Next JS", "Tailwind CSS"],
-    images: ["fond.PNG", "Projects.PNG", "Techno.PNG"],
+    images: ["hero.PNG", "Projects.PNG", "Techno.PNG"],
   },
 ];
 
