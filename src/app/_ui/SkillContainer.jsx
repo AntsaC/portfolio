@@ -3,6 +3,7 @@
 import React, { useRef } from "react";
 import SkillCard from "./SkillCard";
 import { motion, useInView } from "framer-motion";
+import "./SkillContainer.css";
 
 export default function SkillContainer({ type, skills }) {
   const ref = useRef(null);
@@ -20,7 +21,7 @@ export default function SkillContainer({ type, skills }) {
 
   return (
     <motion.div
-      className="relative border-2 rounded  border-green-500 w-4/5 lg:w-56 h-96"
+      className="relative border-2 rounded  border-green-500 w-4/5 lg:w-56 h-96 card"
       variants={variants}
       initial="hidden"
       animate={isInView ? "show" : "hidden"}

@@ -19,9 +19,9 @@ const workflows = [
       "A set of automated processes designed to ensure efficient and consistent software development, testing and deployment, in order to have a rapid time to market ",
   },
   {
-    workflow: "Agile/Scrum methodology",
+    workflow: "Feature branching",
     description:
-      "An iterative and flexible approach to software development, based on sprint",
+      "In git, it involves creating a new branch for each feature to keep the main branch stable and facilitates collaboration",
   },
 ];
 

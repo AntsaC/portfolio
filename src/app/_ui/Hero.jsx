@@ -21,16 +21,16 @@ export default function Hero() {
           <h1 className="mt-2">Passionate about crafting</h1>
         </div>
         <CrafContainer />
-        <div className="flex flex-col lg:flex-row text-center">
+        <div className="flex flex-col lg:flex-row text-center px-3">
           <a
             href="https://cvdesignr.com/p/647e9e7f67ec0"
-            className=" bg-green-600 hover:bg-transparent hover:scale-105 border border-emerald-400 text-white py-3  px-4 transition-all duration-300 ease-in-out mt-6 lg:mt-28"
+            className=" bg-green-600 hover:bg-transparent hover:scale-105 border border-emerald-600 text-white py-3 rounded-sm  px-4 transition-all duration-300 ease-in-out mt-6 lg:mt-28"
           >
             View resume &rarr;
           </a>
           <Link
             href="/project"
-            className=" bg-transparent hover:scale-105 border border-emerald-400 text-white py-3 px-4 transition-all duration-300 ease-in-out mt-6 lg:mt-28 lg:ml-8"
+            className=" bg-transparent hover:scale-105 border border-emerald-400 text-white py-3 px-4 transition-all duration-300 rounded-sm ease-in-out mt-6 lg:mt-28 lg:ml-8"
           >
             Explore projects
           </Link>

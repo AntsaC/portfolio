@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function ProjectCard({ project }) {
   return (
-    <div className="bg-slate-50 border rounded p-2 flex flex-col ">
+    <div className="bg-lime-50 border rounded p-2 flex flex-col ">
       <div className="h-44 lg:h-64 relative">
         <Image
           alt="Project thumbnail"
