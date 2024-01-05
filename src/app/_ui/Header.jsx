@@ -27,7 +27,7 @@ export default function Header() {
   const isSmallDevice = useMediaQuery({ query: "(max-width: 768px)" });
 
   return (
-    <nav className=" flex items-center justify-between flex-wrap p-6">
+    <div className=" flex items-center justify-between flex-wrap p-6">
       <div className="flex items-center  text-white mr-6">
         <Link href="/" className="font-semibold text-xl tracking-tight">
           Ina_Leka_Zao
@@ -35,17 +35,17 @@ export default function Header() {
       </div>
       <MobileMenu />
       {isSmallDevice == false && <NavLinkContainer />}
-    </nav>
+    </div>
   );
 }
 
 export function NavLinkContainer() {
   return (
-    <div className="text-xl lg:text-sm flex flex-col lg:flex-row  items-center mt-28 lg:mt-0 text-center uppercase ">
+    <nav className="text-xl lg:text-sm flex flex-col lg:flex-row  items-center mt-28 lg:mt-0 text-center uppercase ">
       {links.map((link) => (
         <NavLink key={link.text} {...link} />
       ))}
-    </div>
+    </nav>
   );
 }
 
