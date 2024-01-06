@@ -1,9 +1,18 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 export default function ProjectCard({ project }) {
   return (
-    <div className="bg-lime-50 border rounded p-2 flex flex-col ">
+    <motion.div
+      initial={{ opacity: 0, y: 10 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      whileHover={{ scale: 1.01 }}
+      transition={{ duration: 0.5 }}
+      className="bg-lime-50 border rounded p-2 flex flex-col "
+    >
       <div className="h-44 lg:h-64 relative">
         <Image
           alt="Project thumbnail"
@@ -38,6 +47,6 @@ export default function ProjectCard({ project }) {
           View
         </Link>
       </div>
-    </div>
+    </motion.div>
   );
 }

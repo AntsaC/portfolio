@@ -17,15 +17,9 @@ const links = [
     text: "Projects",
     href: "/project",
   },
-  {
-    text: "Experiences",
-    href: "/experience",
-  },
 ];
 
 export default function Header() {
-  const isSmallDevice = useMediaQuery({ query: "(max-width: 768px)" });
-
   return (
     <div className=" flex items-center justify-between flex-wrap p-6">
       <div className="flex items-center  text-white mr-6">
@@ -34,18 +28,20 @@ export default function Header() {
         </Link>
       </div>
       <MobileMenu />
-      {isSmallDevice == false && <NavLinkContainer />}
+      <div className="hidden lg:block">
+        <NavLinkContainer />
+      </div>
     </div>
   );
 }
 
 export function NavLinkContainer() {
   return (
-    <nav className="text-xl lg:text-sm flex flex-col lg:flex-row  items-center mt-28 lg:mt-0 text-center uppercase ">
+    <div className="text-xl lg:text-sm flex flex-col lg:flex-row  items-center mt-28 lg:mt-0 text-center uppercase ">
       {links.map((link) => (
         <NavLink key={link.text} {...link} />
       ))}
-    </nav>
+    </div>
   );
 }
 
