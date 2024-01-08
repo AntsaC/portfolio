@@ -10,9 +10,6 @@ const frontSkills = [
   {
     src: "next",
     label: "Next 13",
-    style: {
-      background: "white",
-    },
   },
   {
     src: "flutter",
@@ -91,7 +88,7 @@ export default function Skills() {
   return (
     <div className="mt-3">
       <Subtitle text={"Technologies"} />
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 mt-8 justify-items-center gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 mt-8 justify-items-center gap-10 px-4">
         <SkillContainer skills={frontSkills} type={"Frontend"} />
         <SkillContainer skills={apiSkills} type={"API"} />
         <SkillContainer skills={backSkills} type={"Backend"} />

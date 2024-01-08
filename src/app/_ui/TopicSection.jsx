@@ -3,6 +3,10 @@ import Image from "next/image";
 import Subtitle from "./shared/Subtitle";
 
 const topics = [
+  "HTML",
+  "CSS",
+  "Javascript",
+  "Typescript",
   "DDD",
   "TDD",
   "BDD",
@@ -27,7 +31,6 @@ const topics = [
   "Docker compose",
   "Docker",
   "UML",
-  "Typescript",
   "Design pattern",
   "SEO",
 ];
