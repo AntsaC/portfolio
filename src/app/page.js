@@ -6,11 +6,13 @@ import Workflow from "./_ui/Workflow";
 
 export default function Home() {
   return (
-    <main className="p-4">
-      <Hero />
-      <Skills />
-      <Workflow />
-      <TopicSection />
+    <main>
+      <div className="lg:px-20 p-4">
+        <Hero />
+        <Skills />
+        <Workflow />
+        <TopicSection />
+      </div>
       <Footer />
     </main>
   );

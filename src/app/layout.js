@@ -1,7 +1,6 @@
 import { Raleway } from "next/font/google";
 import "./globals.css";
 import Header from "./_ui/Header";
-import Footer from "./_ui/Footer";
 
 const inter = Raleway({ subsets: ["latin"] });
 
@@ -15,7 +14,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <Header />
-        <main className="lg:px-20">{children}</main>
+        {children}
       </body>
     </html>
   );
