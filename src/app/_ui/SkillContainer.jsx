@@ -45,7 +45,7 @@ export default function SkillContainer({ type, skills }) {
         <motion.rect
           width="100%"
           height="100%"
-          rx="10"
+          rx="2"
           strokeWidth={2}
           fill="none"
           stroke="currentColor"
