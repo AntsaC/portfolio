@@ -78,9 +78,6 @@ const serviceSkills = [
   {
     src: "github",
     label: "Github",
-    style: {
-      background: "white",
-    },
   },
 ];
 

@@ -3,6 +3,7 @@
 import React, { useRef } from "react";
 import SkillCard from "./SkillCard";
 import { motion, useInView } from "framer-motion";
+import "./SkillContainer.css";
 
 export default function SkillContainer({ type, skills }) {
   const ref = useRef(null);
@@ -31,10 +32,13 @@ export default function SkillContainer({ type, skills }) {
 
   return (
     <motion.div
-      className="relative h-96  w-full"
+      className="relative h-96  w-full card"
       variants={variants}
       initial="hidden"
       animate={isInView && "show"}
+      whileHover={{
+        y: -5,
+      }}
     >
       <motion.svg
         viewBox="0 0 "

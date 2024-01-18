@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import "./CraftItems.css";
 
 const crafts = [
   "SSR Web Application",
@@ -16,7 +17,7 @@ export default function CrafContainer() {
 
   return (
     <motion.div
-      className="mt-6 text-2xl lg:text-5xl text-emerald-400 font-bold "
+      className="mt-6 text-2xl lg:text-5xl  font-bold glow "
       key={index}
       animate={{ opacity: [0, 1] }}
       transition={{ duration: 2.5 }}
