@@ -1,3 +1,4 @@
+import Footer from "./_ui/Footer";
 import Hero from "./_ui/Hero";
 import Skills from "./_ui/Skills";
 import TopicSection from "./_ui/TopicSection";
@@ -10,6 +11,7 @@ export default function Home() {
       <Skills />
       <Workflow />
       <TopicSection />
+      <Footer />
     </main>
   );
 }

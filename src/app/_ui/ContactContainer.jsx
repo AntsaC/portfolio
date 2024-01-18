@@ -68,8 +68,8 @@ const contacts = [
 export default function ContactContainer() {
   return (
     <motion.div
-      initial={{ x: -20, opacity: 0 }}
-      animate={{ x: 0, opacity: 1 }}
+      initial={{ x: -120, opacity: 0 }}
+      animate={{ x: -100, opacity: 1 }}
       transition={{ duration: 0.5 }}
       className="flex justify-center lg:flex-col gap-10 lg:gap-6 lg:fixed top-1/2 -translate-y-1/2 px-2 mb-6"
     >
@@ -85,7 +85,7 @@ function ContactItem({ contact }) {
     <a
       href={contact.href}
       target="_blank"
-      className="text-slate-300 w-5 h-5 hover:text-teal-400 hover:scale-110 transition-all duration-200"
+      className="text-slate-300 w-6 h-6 lg:w-5 lg:h-5 hover:text-teal-400 hover:scale-110 transition-all duration-200"
     >
       {contact.icon}
     </a>
