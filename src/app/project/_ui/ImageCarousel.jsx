@@ -10,7 +10,7 @@ export default function ProjectImageCarousel({ project }) {
   const [image, setImage] = useState(project.images[0]);
 
   const carousel = (
-    <div className="w-full h-48 lg:h-96 relative">
+    <div className="w-full h-48 lg:h-[420px] relative">
       <Image
         alt="Image"
         fill
