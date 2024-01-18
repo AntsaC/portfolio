@@ -40,7 +40,7 @@ export default function SkillContainer({ type, skills }) {
         viewBox="0 0 "
         width="100%"
         height="100%"
-        className="absolute top-0 text-green-500"
+        className="absolute top-0 text-emerald-600"
       >
         <motion.rect
           width="100%"

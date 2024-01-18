@@ -6,7 +6,7 @@ export default function ProjectDetailPage({ params }) {
   const project = getProject(params.key);
 
   return (
-    <main className="p-4">
+    <main className="p-4 mt-12">
       <div className="flex px-4 flex-col lg:flex-row">
         <ProjectImageCarousel project={project} />
         <ProjectDetailContainer project={project} />

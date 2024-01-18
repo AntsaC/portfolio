@@ -17,11 +17,15 @@ const links = [
     text: "Projects",
     href: "/project",
   },
+  {
+    text: "Experiences",
+    href: "/experience",
+  },
 ];
 
 export default function Header() {
   return (
-    <div className=" flex items-center justify-between flex-wrap p-6">
+    <div className=" flex items-center justify-between flex-wrap px-6 py-4 fixed top-0 w-full bg-background z-50">
       <div className="flex items-center  text-white mr-6">
         <Link href="/" className="font-semibold text-xl tracking-tight">
           Ina_Leka_Zao
