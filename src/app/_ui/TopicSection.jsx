@@ -47,11 +47,13 @@ export default function TopicSection() {
         />
       </div>
       <div>
-        <Subtitle text={"Topics that I know"} />
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 mt-5">
-          {topics.map((topic, index) => (
-            <TopicItem key={index} topic={topic} />
-          ))}
+        <div className="flex h-full justify-center items-center flex-col">
+          <Subtitle text={"Topics that I know"} />
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 mt-8">
+            {topics.map((topic, index) => (
+              <TopicItem key={index} topic={topic} />
+            ))}
+          </div>
         </div>
       </div>
     </div>
