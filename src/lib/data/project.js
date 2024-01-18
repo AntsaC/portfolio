@@ -5,7 +5,7 @@ const projects = [
       "A simple clone of the Jira software, a plateform to manage agile projects",
     key: "Jira",
     thumbnail: "backlog.png",
-    tags: ["React", "Symfony", "Postgresql"],
+    tags: ["React", "MUI", "Symfony", "Postgresql"],
     features: [
       "Authentication based on JWT",
       "Projects management",
@@ -54,7 +54,7 @@ const projects = [
       "Platform (a web app with mobile app) to manage fleets of companies",
     key: "Fleet",
     thumbnail: "map.PNG",
-    tags: ["React", "Symfony", "Flutter"],
+    tags: ["React", "Symfony", "Firebase", "Flutter"],
     features: [
       "Authentication based on JWT",
       "Vehicles management",
