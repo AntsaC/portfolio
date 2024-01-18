@@ -11,7 +11,7 @@ const contacts = [
         viewBox="0 0 24 24"
         fill="none"
         stroke="currentColor"
-        stroke-linecap="round"
+        strokeLineCap="round"
         stroke-linejoin="round"
         class="feather feather-github"
       >
@@ -29,8 +29,8 @@ const contacts = [
         viewBox="0 0 24 24"
         fill="false"
         stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"
+        strokeWidth="2"
+        strokeLineCap="round"
         stroke-linejoin="round"
         class="feather feather-linkedin"
       >
@@ -71,7 +71,7 @@ export default function ContactContainer() {
       initial={{ x: -20, opacity: 0 }}
       animate={{ x: 0, opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className="flex lg:flex-col gap-6 fixed top-1/2 -translate-y-1/2 px-2"
+      className="flex justify-center lg:flex-col gap-10 lg:gap-6 lg:fixed top-1/2 -translate-y-1/2 px-2 mb-6"
     >
       {contacts.map((contact, index) => (
         <ContactItem key={index} contact={contact} />
