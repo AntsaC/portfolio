@@ -63,6 +63,8 @@ const projects = [
       "Real-time tracking of vehicles",
       "Maintenances management",
       "Fuel management",
+      "Data reporting",
+      "Export PDF",
     ],
     technologies: [
       "Symfony 6",
@@ -77,7 +79,7 @@ const projects = [
       "Websocket",
       "Firebase",
     ],
-    images: ["map.PNG", "journal.PNG", "rapport.PNG"],
+    images: ["map.PNG", "journal.PNG", "PDF.PNG", "rapport.PNG", "graph.PNG"],
   },
   {
     name: "Portfolio",

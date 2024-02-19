@@ -23,7 +23,7 @@ export default function Hero() {
         <CrafContainer />
         <div className="flex flex-col lg:flex-row text-center px-3">
           <a
-            href="https://cvdesignr.com/p/647e9e7f67ec0"
+            href="https://cvdesignr.com/p/65b483997b98e"
             className=" bg-emerald-600 hover:bg-transparent hover:scale-105 border border-emerald-600 text-white py-3 rounded-sm  px-4 transition-all duration-300 ease-in-out mt-6 lg:mt-28"
             target="_blank"
           >

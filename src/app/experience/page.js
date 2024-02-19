@@ -7,7 +7,7 @@ const experiences = [
   {
     title: "Fullstack",
     organisation: "PRIRTEM",
-    date: "Jully 2023 - January 2024",
+    date: "January 2023 - January 2024",
     details: [
       "Developped and designed a web application to manage fleets of PRIRTEM",
       "Developped a mobile application for client to communicate with the backend of the platform",

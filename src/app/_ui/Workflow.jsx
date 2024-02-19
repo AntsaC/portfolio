@@ -9,11 +9,13 @@ import "../_ui/workflow.css";
 
 const workflows = [
   {
-    workflow: "Agile/Scrum methodology",
+    icon: "scrum",
+    workflow: "Agile/Scrum ",
     description:
-      "An iterative and flexible approach to software development, based on sprint",
+      "An iterative, incremantive and flexible approach to software development, based on agile events and sprints",
   },
   {
+    icon: "devops",
     workflow: "CI/CD pipeline",
     description:
       "A set of automated processes designed to ensure efficient and consistent software development, testing and deployment, in order to have a rapid time to market ",

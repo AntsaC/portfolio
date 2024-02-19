@@ -17,10 +17,8 @@ export default function ExperienceContainer({ experience }) {
 function ListItem({ description }) {
   return (
     <li className="mt-2">
-      <div className="flex gap-2">
-        <span className="text-xs mt-1 text-emerald-600 font-semibold">
-          &lt;/&gt;
-        </span>
+      <div className="flex gap-3">
+        <span className="text-xs mt-1 text-teal-200 font-bold">&lt;/&gt;</span>
         <p>{description}</p>
       </div>
     </li>

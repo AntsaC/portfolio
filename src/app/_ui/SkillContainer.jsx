@@ -41,7 +41,6 @@ export default function SkillContainer({ type, skills }) {
       }}
     >
       <motion.svg
-        viewBox="0 0 "
         width="100%"
         height="100%"
         className="absolute top-0 text-emerald-600"
