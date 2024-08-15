@@ -6,7 +6,7 @@ import Workflow from "./_ui/Workflow";
 
 export default function Home() {
   return (
-    <main className={"mt-20 lg:mt-0"}>
+    <main className={"mt-20 md:mt-0"}>
         <Hero />
         <Skills />
         <Workflow />

@@ -18,11 +18,11 @@ export default function SkillCard({ src, label, style, extension = "svg" }) {
       <Image
         src={"/photo/skills/" + src + "-icon." + extension}
         alt={src}
-        width={50}
-        height={50}
+        width={70}
+        height={70}
         style={style}
       />
-      <h4 className="text-slate-50 font-semibold mt-2">{label}</h4>
+      <h4 className="text-xl text-slate-50 font-semibold mt-2">{label}</h4>
     </motion.div>
   );
 }
