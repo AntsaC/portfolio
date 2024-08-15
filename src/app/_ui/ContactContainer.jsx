@@ -66,10 +66,10 @@ const contacts = [
 export default function ContactContainer() {
   return (
     <motion.div
-      initial={{ x: -20, opacity: 0 }}
-      animate={{ x: 0, opacity: 1 }}
+      initial={{ x: -20, opacity: 0, transform: "translate(0%,-50%)" }}
+      animate={{ x: 0, opacity: 1}}
       transition={{ duration: 0.5 }}
-      className="flex justify-center lg:flex-col gap-10 lg:gap-6 lg:fixed top-1/2 -translate-y-1/2 px-2 mb-6"
+      className="flex justify-center lg:flex-col gap-10 lg:gap-6 lg:fixed top-1/2 px-2"
     >
       {contacts.map((contact, index) => (
         <ContactItem key={index} contact={contact} />
