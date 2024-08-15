@@ -83,7 +83,7 @@ function ContactItem({ contact }) {
     <a
       href={contact.href}
       target="_blank"
-      className="text-slate-300 w-6 h-6 lg:w-5 lg:h-5 hover:text-teal-400 hover:scale-110 transition-all duration-200"
+      className="text-slate-300 w-6 h-6 lg:w-7 lg:h-7 hover:text-teal-400 hover:scale-110 transition-all duration-200"
     >
       {contact.icon}
     </a>
