@@ -3,9 +3,9 @@ import ContactContainer from "./ContactContainer";
 
 export default function Footer() {
   return (
-    <div className="mt-8 pb-6 text-zinc-50 text-center px-4">
+    <div className="py-12 text-zinc-50 text-center px-4">
       <ContactContainer />
-      <p>
+      <p className={"mt-2"}>
         Build with <span className="text-green-400">Next JS</span> and{" "}
         <span className="text-green-400">Tailwind CSS</span>, deployed by
         Vercel.

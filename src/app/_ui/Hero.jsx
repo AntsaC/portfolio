@@ -8,8 +8,8 @@ export default function Hero() {
       <div className="container lg:h-dvh mx-auto">
         <div className="flex flex-col h-full lg:flex-row lg:items-center lg:content-between px-2 gap-y-14 lg:gap-0">
           <div className="text-slate-200 text-center lg:text-start">
-            <p className="text-3xl lg:text-4xl md:inline">Hi there, I&apos;m </p>
-            <p className="text-4xl md:inline">
+            <p className="text-2xl lg:text-4xl md:inline">Hi there, I&apos;m </p>
+            <p className="text-xl md:text-4xl md:inline">
               &lt;&gt;
               <span className="text-3xl text-emerald-400 font-bold">
             {" "}

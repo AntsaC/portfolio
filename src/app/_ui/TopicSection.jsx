@@ -37,7 +37,7 @@ const topics = [
 
 export default function TopicSection() {
   return (
-    <div className="flex justify-around mt-12">
+    <div className="flex justify-around mt-7">
       <div className="hidden lg:block">
         <Image
           src={"/photo/profile2.jpg"}
