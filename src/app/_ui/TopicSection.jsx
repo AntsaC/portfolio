@@ -37,19 +37,19 @@ const topics = [
 
 export default function TopicSection() {
   return (
-    <div className="flex justify-around mt-4">
+    <div className="flex justify-around mt-12">
       <div className="hidden lg:block">
         <Image
           src={"/photo/profile2.jpg"}
           alt="Profile 2"
-          width={350}
-          height={350}
+          width={450}
+          height={450}
         />
       </div>
       <div>
         <div className="flex h-full justify-center items-center flex-col">
           <Subtitle text={"Topics that I know"} />
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 mt-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6 mt-8 px-4 md:px-0">
             {topics.map((topic, index) => (
               <TopicItem key={index} topic={topic} />
             ))}
@@ -62,7 +62,7 @@ export default function TopicSection() {
 
 export function TopicItem({ topic }) {
   return (
-    <div className="border border-emerald-400 rounded-3xl text-xs p-2 text-center text-white">
+    <div className="border border-emerald-400 rounded-3xl text-base md:text-xl p-2 text-center text-white">
       {topic}
     </div>
   );
