@@ -5,7 +5,17 @@ import { motion } from "framer-motion";
 
 const experiences = [
   {
-    title: "Fullstack",
+    title: "Symfony developer",
+    organisation: "Apex Voyage - Freelance",
+    date: "January 2024 - July 2024",
+    details: [
+      "Developed and designed the front office part of a web application for language study programs",
+      "Developed and designed the ERP part of a web application for language study programs",
+      "Implemented new functionalities based on operational needs"
+    ],
+  },
+  {
+    title: "Fullstack developer",
     organisation: "PRIRTEM",
     date: "January 2023 - January 2024",
     details: [
@@ -22,10 +32,10 @@ export default function ExperiencePage() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
-      className="lg:px-8  absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-4/5 lg:w-fit lg:-translate-y-3/4"
+      className="lg:px-8  absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-4/5 lg:w-fit lg:-translate-y-3/4 mt-12 py-12"
     >
       <Title title="My experiences" />
-      <div className="mt-10">
+      <div className="">
         {experiences.map((experience) => (
           <ExperienceContainer key={experience.title} experience={experience} />
         ))}

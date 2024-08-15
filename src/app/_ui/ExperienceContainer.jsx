@@ -1,6 +1,6 @@
 export default function ExperienceContainer({ experience }) {
   return (
-    <div className="text-slate-400">
+    <div className="text-slate-400 mt-6">
       <h3 className="font-bold text-xl text-slate-200">
         {experience.title} at <span>{experience.organisation}</span>
       </h3>
