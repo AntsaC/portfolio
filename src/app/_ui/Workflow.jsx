@@ -40,7 +40,7 @@ export default function Workflow() {
   );
 
   return (
-    <div className="mt-8">
+    <div className="container mx-auto mt-10">
       <Subtitle text={"Workflow"} />
       <div className="embla ">
         <div className="embla__viewport" ref={emblaRef}>
