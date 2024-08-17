@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function Hero() {
   return (
       <div className="container lg:h-dvh mx-auto">
-        <div className="flex flex-col h-full lg:flex-row lg:items-center lg:content-between px-2 gap-y-14 lg:gap-0">
+        <div className="flex flex-col h-full lg:flex-row lg:items-center lg:justify-between px-2 gap-y-14 lg:gap-0">
           <div className="text-slate-200 text-center lg:text-start">
             <p className="text-2xl lg:text-4xl md:inline">Hi there, I&apos;m </p>
             <p className="text-xl md:text-4xl md:inline">
@@ -39,7 +39,7 @@ export default function Hero() {
             </div>
           </div>
           <div
-              className="m-auto border-1  border-emarald-600 ring-2 shadow-md ring-emerald-600 rounded transform rotate-3 h-fit w-fit">
+              className="border-1  border-emarald-600 ring-2 shadow-md ring-emerald-600 rounded transform rotate-3 h-fit w-fit">
             <Image
                 className="transform -rotate-3 rounded-sm"
                 src="/photo/profile.jpg"
