@@ -5,8 +5,8 @@ import Link from "next/link";
 
 export default function Hero() {
   return (
-      <div className="container lg:h-dvh mx-auto">
-        <div className="flex flex-col h-full lg:flex-row lg:items-center lg:justify-between px-2 gap-y-14 lg:gap-0">
+      <div className="container max-w-screen-xl md:h-dvh">
+        <div className="flex flex-col h-full md:flex-row md:items-center md:justify-between px-2 gap-y-14 md:gap-0">
           <div className="text-slate-200 text-center lg:text-start">
             <p className="text-2xl lg:text-4xl md:inline">Hi there, I&apos;m </p>
             <p className="text-xl md:text-4xl md:inline">
@@ -17,8 +17,8 @@ export default function Hero() {
           </span>
               &lt;/&gt;
             </p>
-            <div className="text-3xl lg:text-7xl lg:mt-10 font-semibold">
-              <h1>Full Stack Developper</h1>
+            <div className="text-3xl lg:text-6xl lg:mt-10 font-semibold">
+              <h1>Full Stack Developer</h1>
               <h1 className="mt-2">Passionate about crafting</h1>
             </div>
             <CrafContainer/>
@@ -44,8 +44,8 @@ export default function Hero() {
                 className="transform -rotate-3 rounded-sm"
                 src="/photo/profile.jpg"
                 alt="Profile"
-                width={500}
-                height={500}
+                width={400}
+                height={400}
             />
           </div>
         </div>

@@ -57,7 +57,7 @@ export default function SkillContainer({ type, skills }) {
         />
       </motion.svg>
       <h5
-        className="text-xl md:text-3xl absolute left-1/2 transform -translate-x-1/2 text-emerald-600 bg-background px-1 font-semibold"
+        className="text-xl md:text-2xl absolute left-1/2 transform -translate-x-1/2 text-emerald-600 bg-background px-1 font-semibold"
         style={{ top: -20, backgroundColor: "rgba(6,28,34,0.62)" }}
       >
         {type}

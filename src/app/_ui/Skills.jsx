@@ -102,13 +102,15 @@ export default function Skills() {
   return (
     <div className="mt-5 lg:mt-0">
       <Subtitle text={"Technologies"} />
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 mt-8 gap-10 px-4">
-        <SkillContainer skills={frontSkills} type={"Frontend"} />
-        <SkillContainer skills={apiSkills} type={"API"} />
-        <SkillContainer skills={backSkills} type={"Backend"} />
-        <SkillContainer skills={databaseSkills} type={"Database"} />
-        <SkillContainer skills={serviceSkills} type={"Tools"} />
-        <SkillContainer skills={toolsSkills} type={"Other tools"} />
+      <div className="container max-w-screen-xl">
+        <div className="grid grid-cols-1 md:grid-cols-3 mt-8 gap-10 px-4">
+          <SkillContainer skills={frontSkills} type={"Frontend"}/>
+          <SkillContainer skills={apiSkills} type={"API"}/>
+          <SkillContainer skills={backSkills} type={"Backend"}/>
+          <SkillContainer skills={databaseSkills} type={"Database"}/>
+          <SkillContainer skills={serviceSkills} type={"Tools"}/>
+          <SkillContainer skills={toolsSkills} type={"Other tools"}/>
+        </div>
       </div>
     </div>
   );

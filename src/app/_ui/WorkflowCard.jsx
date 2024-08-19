@@ -5,7 +5,7 @@ export default function WorkflowCard({ icon, workflow, description }) {
   return (
     <div
       style={{ flex: "0 0 100%" }}
-      className="embla__slide lg:max-w-sm rounded  shadow-lg bg-emerald-600 p-10 "
+      className="embla__slide lg:max-w-sm rounded  shadow-lg bg-emerald-800 p-10"
     >
       <div className="px-0 lg:p-2">
         <h5 className="font-bold text-3xl mb-3 text-white">{workflow}</h5>

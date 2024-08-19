@@ -18,6 +18,10 @@ module.exports = {
         sub_title: "#0C7075",
         background: "#061c22",
       },
+      container: {
+        center: true,
+        padding: '2rem'
+      }
     },
   },
   plugins: [],

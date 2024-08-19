@@ -17,7 +17,7 @@ export default function CrafContainer() {
 
   return (
     <motion.div
-      className="mt-4 lg:mt-7 text-4xl lg:text-6xl  font-bold glow "
+      className="mt-4 lg:mt-7 text-4xl lg:text-5xl  font-bold glow "
       key={index}
       animate={{ opacity: [0, 1] }}
       transition={{ duration: 2.5 }}
