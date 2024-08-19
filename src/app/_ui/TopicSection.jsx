@@ -37,8 +37,8 @@ const topics = [
 
 export default function TopicSection() {
   return (
-      <div className="container max-w-screen-xl">
-        <div className="flex justify-around mt-20">
+      <div className="container max-w-screen-xl mt-12 lg:mt-28">
+        <div className="flex justify-around">
           <div className="hidden lg:block">
             <Image
                 src={"/photo/profile2.jpg"}
@@ -64,7 +64,7 @@ export default function TopicSection() {
 
 export function TopicItem({topic}) {
   return (
-      <div className="border border-emerald-400 rounded-3xl text-base p-2 text-center text-white">
+      <div className="border border-emerald-400 rounded-3xl text-sm md:text-base p-2 text-center text-white">
         {topic}
       </div>
   );
