@@ -19,7 +19,7 @@ export default function Hero() {
             </p>
             <div className="text-3xl lg:text-6xl lg:mt-10 font-semibold">
               <h1>Full Stack Developer</h1>
-              <h1 className="mt-2">Passionate about crafting</h1>
+              <h1 className="mt-2">Passionate about</h1>
             </div>
             <CrafContainer/>
             <div className="flex flex-col md:flex-row text-center px-3">
@@ -44,8 +44,8 @@ export default function Hero() {
                 className="transform -rotate-3 rounded-sm"
                 src="/photo/profile.jpg"
                 alt="Profile"
-                width={400}
-                height={400}
+                width={460}
+                height={460}
             />
           </div>
         </div>
