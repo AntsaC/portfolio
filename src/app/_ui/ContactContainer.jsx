@@ -69,7 +69,7 @@ export default function ContactContainer() {
       initial={{ x: -20, opacity: 0, transform: "translate(0%,-50%)" }}
       animate={{ x: 0, opacity: 1}}
       transition={{ duration: 0.5 }}
-      className="flex justify-center lg:flex-col gap-10 lg:gap-6 lg:fixed top-1/2 px-2"
+      className="flex justify-center xl:flex-col gap-10 xl:gap-6 xl:fixed top-1/2 px-2"
     >
       {contacts.map((contact, index) => (
         <ContactItem key={index} contact={contact} />
