@@ -37,7 +37,7 @@ const topics = [
 
 export default function TopicSection() {
   return (
-      <div className="container max-w-screen-xl mt-12 lg:mt-28">
+      <div className="container mt-12 lg:mt-28">
         <div className="flex justify-around">
           <div className="hidden lg:block">
             <Image

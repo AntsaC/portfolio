@@ -40,7 +40,7 @@ export default function Workflow() {
   );
 
   return (
-    <div className="container max-w-screen-xl mt-12 lg:mt-28">
+    <div className="container mt-12 lg:mt-28">
       <Subtitle text={"Workflow"} />
       <div className="embla ">
         <div className="embla__viewport" ref={emblaRef}>
