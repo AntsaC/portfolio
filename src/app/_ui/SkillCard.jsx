@@ -18,8 +18,8 @@ export default function SkillCard({ src, label, style, extension = "svg" }) {
       <Image
         src={"/photo/skills/" + src + "-icon." + extension}
         alt={src}
-        width={45}
-        height={45}
+        width={50}
+        height={50}
         style={style}
       />
       <h4 className="text-base md:text-xl text-slate-50 font-semibold mt-2">{label}</h4>

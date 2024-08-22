@@ -32,7 +32,7 @@ export default function SkillContainer({ type, skills }) {
 
   return (
     <motion.div
-      className="relative w-full card h-96 lg:h-[50dvh] py-5"
+      className="relative w-full card h-96 py-1 lg:py-5"
       variants={variants}
       initial="hidden"
       animate={isInView && "show"}
