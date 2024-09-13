@@ -17,10 +17,10 @@ const links = [
     text: "Projects",
     href: "/project",
   },
-  {
-    text: "Experiences",
-    href: "/experience",
-  },
+  // {
+  //   text: "Experiences",
+  //   href: "/experience",
+  // },
 ];
 
 export default function Header() {
