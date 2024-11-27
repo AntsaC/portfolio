@@ -24,7 +24,7 @@ export default function Hero() {
             <CrafContainer/>
             <div className="flex flex-col md:flex-row text-center px-3">
               <a
-                  href="https://cvdesignr.com/p/65b483997b98e"
+                  href="https://cvdesignr.com/p/66f24f4531be1"
                   className=" bg-emerald-600 hover:bg-transparent hover:scale-105 border border-emerald-600 text-white py-3 rounded-sm  px-4 transition-all duration-300 ease-in-out mt-6 lg:mt-28"
                   target="_blank"
               >
