@@ -66,6 +66,7 @@ const contacts = [
 export default function ContactContainer() {
   return (
     <motion.div
+      id="contact-section"
       initial={{ x: -20, opacity: 0, transform: "translate(0%,-50%)" }}
       animate={{ x: 0, opacity: 1}}
       transition={{ duration: 0.5 }}

@@ -22,17 +22,11 @@ export default function Hero() {
               <h1 className="mt-2">Passionate about</h1>
             </div>
             <CrafContainer/>
-            <div className="flex flex-col md:flex-row text-center px-3">
-              <a
-                  href="https://cvdesignr.com/p/66f24f4531be1"
-                  className=" bg-emerald-600 hover:bg-transparent hover:scale-105 border border-emerald-600 text-white py-3 rounded-sm  px-4 transition-all duration-300 ease-in-out mt-6 lg:mt-28"
-                  target="_blank"
-              >
-                View resume &rarr;
-              </a>
+            <div className="flex flex-col md:flex-row text-center">
+              
               <Link
                   href="/project"
-                  className=" bg-transparent hover:scale-105 border border-emerald-600 text-white py-3 px-4 transition-all duration-300 rounded-sm ease-in-out mt-6 lg:mt-28 lg:ml-8"
+                  className="bg-emerald-600 hover:scale-105 border border-emerald-600 text-white py-3 px-4 transition-all duration-300 rounded-sm ease-in-out mt-6 lg:mt-28 lg:ml-8"
               >
                 Explore projects
               </Link>
