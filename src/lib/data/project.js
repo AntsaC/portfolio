@@ -53,8 +53,8 @@ const projects = [
     website: "https://www.laroutedeslangues.com/",
     description:
       "A web application for linguistic stay",
-    key: "Jira",
-    thumbnail: "backlog.png",
+    key: "LRD",
+    thumbnail: "hero.png",
     tags: ["Symfony", "Twig", "MariadDB", "Elasticsearch"],
     features: [
       "Authentication based on JWT",
@@ -91,18 +91,17 @@ const projects = [
       "CI pipeline",
     ],
     images: [
-      "backlog.png",
-      "board.png",
-      "project.png",
-      "sprint-formdialog.png",
-      "sprint-story.png",
+      "brochure.png",
+      "hero.png",
+      "product.png",
+      "program.png"
     ],
   },
   {
     name: "Keiron Education",
     description:
       "A web application for linguistic stay",
-    key: "Jira",
+    key: "KE",
     website: "https://www.keiron-education.com/",
     thumbnail: "backlog.png",
     tags: ["Symfony", "Twig", "MariadDB", "Elasticsearch"],
@@ -152,7 +151,7 @@ const projects = [
     name: "Séjours Home Abroad",
     description:
       "A web application for linguistic stay",
-    key: "Jira",
+    key: "SHA",
     website: "https://www.sejours-homeabroad.com/",
     thumbnail: "backlog.png",
     tags: ["Symfony", "Twig", "MariadDB", "Elasticsearch"],
@@ -202,7 +201,7 @@ const projects = [
     name: "Motorcycle garage",
     description:
       "A web application to manage motorcycle garage",
-    key: "Jira",
+    key: "MGC",
     thumbnail: "backlog.png",
     tags:["Symfony", "Twig", "Mysql"],
     features: [
@@ -251,7 +250,7 @@ const projects = [
     name: "In'liso",
     description:
       "A web application for apartment rentals",
-    key: "Jira",
+    key: "IL",
     thumbnail: "backlog.png",
     tags: ["Laravel", "Next JS", "Tailwind CSS", "Mysql"],
     features: [
@@ -302,7 +301,7 @@ const projects = [
       "Showcase website for BYD to display its electric vehicle catalogs.",
     key: "BYD",
     website: "https://www.byd.mq",
-    thumbnail: "backlog.png",
+    thumbnail: "home.png",
     tags: ["Symfony", "Twig", "Mysql"],
     features: [
       "Authentication based on JWT",
@@ -339,11 +338,10 @@ const projects = [
       "CI pipeline",
     ],
     images: [
-      "backlog.png",
-      "board.png",
-      "project.png",
-      "sprint-formdialog.png",
-      "sprint-story.png",
+      "car.png",
+      "catalog.png",
+      "home.png",
+      "overview.png"
     ],
   },
   {

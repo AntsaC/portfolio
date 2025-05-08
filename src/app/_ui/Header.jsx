@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { useMediaQuery } from "react-responsive";
 import Link from "next/link";
@@ -10,12 +10,16 @@ import clsx from "clsx";
 
 const links = [
   {
-    text: "Home",
-    href: "/",
+    text: "Hero",
+    href: "#hero",
   },
   {
     text: "Projects",
-    href: "/project",
+    href: "#projects",
+  },
+  {
+    text: "Skills",
+    href: "#skills",
   },
   // {
   //   text: "Experiences",
@@ -24,8 +28,25 @@ const links = [
 ];
 
 export default function Header() {
+  const [show, setShow] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > lastScrollY) {
+        setShow(false);
+      } else {
+        setShow(true);
+      }
+      setLastScrollY(window.scrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [lastScrollY]);
+
   return (
-    <header className=" flex items-center justify-between flex-wrap px-4 lg:px-12 py-4 fixed top-0 w-full bg-background z-50">
+    <header className={`flex items-center justify-between flex-wrap px-4 lg:px-12 py-4 fixed top-0 w-full bg-background z-50 transition-all duration-300 ${show ? 'translate-y-0' : '-translate-y-full'}`}>
       <div className="flex items-center  text-white mr-6">
         <Link href="/" className="font-semibold text-xl md:text-2xl tracking-tight">
           Ina_Leka_Zao
