@@ -103,7 +103,7 @@ const projects = [
       "A web application for linguistic stay",
     key: "KE",
     website: "https://www.keiron-education.com/",
-    thumbnail: "backlog.png",
+    thumbnail: "home.png",
     tags: ["Symfony", "Twig", "MariadDB", "Elasticsearch"],
     features: [
       "Authentication based on JWT",
@@ -140,11 +140,10 @@ const projects = [
       "CI pipeline",
     ],
     images: [
-      "backlog.png",
-      "board.png",
-      "project.png",
-      "sprint-formdialog.png",
-      "sprint-story.png",
+      "home.png",
+      "product.png",
+      "programs.png",
+      "country.png"
     ],
   },
   {
@@ -153,7 +152,7 @@ const projects = [
       "A web application for linguistic stay",
     key: "SHA",
     website: "https://www.sejours-homeabroad.com/",
-    thumbnail: "backlog.png",
+    thumbnail: "home.png",
     tags: ["Symfony", "Twig", "MariadDB", "Elasticsearch"],
     features: [
       "Authentication based on JWT",
@@ -190,11 +189,10 @@ const projects = [
       "CI pipeline",
     ],
     images: [
-      "backlog.png",
-      "board.png",
-      "project.png",
-      "sprint-formdialog.png",
-      "sprint-story.png",
+      "home.png",
+      "destination.png",
+      "search.png",
+      "brochure.png"
     ],
   },
   {
@@ -202,7 +200,7 @@ const projects = [
     description:
       "A web application to manage motorcycle garage",
     key: "MGC",
-    thumbnail: "backlog.png",
+    thumbnail: "maintenance.png",
     tags:["Symfony", "Twig", "Mysql"],
     features: [
       "Authentication based on JWT",
@@ -239,11 +237,10 @@ const projects = [
       "CI pipeline",
     ],
     images: [
-      "backlog.png",
-      "board.png",
-      "project.png",
-      "sprint-formdialog.png",
-      "sprint-story.png",
+      "history.png",
+      "maintenance.png",
+      "qr.png",
+      "customer.png"
     ],
   },
   {
@@ -251,7 +248,7 @@ const projects = [
     description:
       "A web application for apartment rentals",
     key: "IL",
-    thumbnail: "backlog.png",
+    thumbnail: "home.png",
     tags: ["Laravel", "Next JS", "Tailwind CSS", "Mysql"],
     features: [
       "Authentication based on JWT",
@@ -288,11 +285,10 @@ const projects = [
       "CI pipeline",
     ],
     images: [
-      "backlog.png",
-      "board.png",
-      "project.png",
-      "sprint-formdialog.png",
-      "sprint-story.png",
+      "home.png",
+      "search.png",
+      "booking.png",
+      "product.png"
     ],
   },
   {
@@ -375,7 +371,7 @@ const projects = [
       "Websocket",
       "Firebase",
     ],
-    images: ["map.PNG", "journal.PNG", "PDF.PNG", "rapport.PNG", "graph.PNG"],
+    images: ["map.PNG", "journal.PNG", "rapport.PNG", "graph.PNG"],
   },
   {
     name: "Portfolio",
@@ -388,7 +384,7 @@ const projects = [
         link: "https://github.com/AntsaC/portfolio",
       },
     ],
-    tags: ["Next JS", "Tailwind CSS"],
+    tags: ["Next JS", "Tailwind CSS", "Motion"],
     features: ["View my resume", "Projects catalog"],
     technologies: ["Next JS", "Tailwind CSS"],
     images: ["hero.PNG", "Projects.PNG", "Techno.PNG"],

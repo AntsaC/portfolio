@@ -43,7 +43,7 @@ const backSkills = [
   },
   {
     src: "symfony",
-    label: "Symfony 6",
+    label: "Symfony, API Platform",
   },
   {
     src: "nodejs",
