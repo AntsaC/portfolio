@@ -1,8 +1,6 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { motion } from "framer-motion";
-import { useMediaQuery } from "react-responsive";
 import Link from "next/link";
 import MobileMenu from "./MobileMenu";
 import { usePathname } from "next/navigation";
@@ -21,10 +19,10 @@ const links = [
     text: "Skills",
     href: "#skills",
   },
-  // {
-  //   text: "Experiences",
-  //   href: "/experience",
-  // },
+  {
+    text: "Contact",
+    href: "#contact",
+  }
 ];
 
 export default function Header() {

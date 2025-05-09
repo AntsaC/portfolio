@@ -17,10 +17,10 @@ export default function Hero() {
             <div className="flex flex-col md:flex-row text-center">
               
               <Link
-                  href="/project"
+                  href="#contact"
                   className="bg-emerald-600 hover:scale-105 border border-emerald-600 text-white py-3 px-4 transition-all duration-300 rounded-sm ease-in-out mt-6 lg:mt-28"
               >
-                Explore projects
+                Let&apos;s work together
               </Link>
             </div>
           </div>

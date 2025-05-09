@@ -346,7 +346,7 @@ const projects = [
       "Platform (a web app with mobile app) to manage fleets of companies",
     key: "Fleet",
     thumbnail: "map.PNG",
-    tags: ["React", "Symfony", "Firebase", "Flutter"],
+    tags: ["React", "Quarkus", "Firebase", "Flutter"],
     features: [
       "Authentication based on JWT",
       "Vehicles management",
@@ -359,8 +359,7 @@ const projects = [
       "Export PDF",
     ],
     technologies: [
-      "Symfony 6",
-      "Doctrine",
+      "Quarkus",
       "React",
       "React Mui",
       "Tanstack",

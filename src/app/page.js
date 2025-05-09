@@ -1,3 +1,4 @@
+import Contact from "./_ui/Contact";
 import Footer from "./_ui/Footer";
 import Hero from "./_ui/Hero";
 import ProjectCatalog from "./_ui/ProjectCatalog";
@@ -14,6 +15,7 @@ export default function Home() {
         <WhyMe />
         <Skills />
         <TopicSection />
+        <Contact />
         <Footer />
     </main>
   );

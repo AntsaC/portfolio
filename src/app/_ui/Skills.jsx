@@ -38,16 +38,16 @@ const apiSkills = [
 
 const backSkills = [
   {
-    src: "laravel",
-    label: "Laravel",
-  },
-  {
     src: "symfony",
-    label: "Symfony, API Platform",
+    label: "Symfony, Laravel",
   },
   {
     src: "nodejs",
     label: "Node",
+  },
+  {
+    src: "spring-boot",
+    label: "Spring boot, Quarkus",
   },
 ];
 
