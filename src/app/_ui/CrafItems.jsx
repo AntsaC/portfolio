@@ -6,10 +6,10 @@ import "./CraftItems.css";
 
 const crafts = [
   "SSR Web Application",
-  "Modern Web Application",
+  "Web Application",
   "RAD Application",
   "Mobile Application",
-  "Microservice Application",
+  "Microservice",
 ];
 
 export default function CrafContainer() {

@@ -35,9 +35,9 @@ export default function MobileMenu() {
         animate={isOpen ? "open" : "closed"}
         variants={variants}
         transition={{ duration: 0.3 }}
-        className="w-full h-full fixed top-0 right-[-100%] bg-teal-950 z-10"
+        className="w-full h-dvh fixed top-0 right-[-100%] bg-teal-950 z-10"
       >
-        <NavLinkContainer />
+        <NavLinkContainer onClick={() => setOpen(false)} />
       </motion.div>
     </div>
   );

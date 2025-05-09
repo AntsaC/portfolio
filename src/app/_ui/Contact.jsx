@@ -11,7 +11,10 @@ export default function Contact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    window.location.href = `mailto:antsafiderana333@gmail.com?subject=Message from ${formData.name}&body=${formData.message}`;
+    fetch("/contact", {
+      method: "POST",
+      body: JSON.stringify(formData),
+    });
   };
 
   const handleChange = (e) => {

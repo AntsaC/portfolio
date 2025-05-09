@@ -58,24 +58,24 @@ export default function Header() {
   );
 }
 
-export function NavLinkContainer() {
+export function NavLinkContainer({ onClick }) {
   return (
     <div className="text-xl lg:text-sm flex flex-col lg:flex-row  items-center mt-28 lg:mt-0 text-center uppercase ">
       {links.map((link) => (
-        <NavLink key={link.text} {...link} />
+        <NavLink key={link.text} {...link} onClick={onClick} />
       ))}
     </div>
   );
 }
 
-export function NavLink({ text, href }) {
+export function NavLink({ text, href, onClick }) {
   const path = usePathname();
   const classContainer = clsx(
     "block mt-4 lg:inline-block lg:mt-0 text-teal-200 transition-all duration-200 ease-in-out hover:text-white mr-4 hover:border-b hover:border-teal-200",
     { "border-b border-teal-200 text-white": href == path }
   );
   return (
-    <Link href={href} className={classContainer}>
+    <Link href={href} className={classContainer} onClick={onClick}>
       {text}
     </Link>
   );
