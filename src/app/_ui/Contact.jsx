@@ -69,7 +69,7 @@ export default function Contact() {
               value={formData.message}
               onChange={handleChange}
               required
-              rows="4"
+              rows="6"
               className="w-full p-2 rounded bg-slate-800 border border-emerald-600 focus:outline-none focus:ring-2 focus:ring-emerald-600"
             />
           </div>

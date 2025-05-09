@@ -25,14 +25,14 @@ export default function Hero() {
             </div>
           </div>
           <div
-              className="border-1  border-emarald-600 ring-2 shadow-md ring-emerald-600 rounded transform rotate-3 h-fit w-fit">
-            <Image
-                className="transform -rotate-3 rounded-sm"
-                src="/photo/profile.jpg"
-                alt="Profile"
-                width={460}
-                height={460}
-            />
+              className="border-1  border-emarald-600 ring-2 shadow-md ring-emerald-600 rounded transform rotate-3 h-fit w-fit mx-auto">
+              <Image
+                  className="transform -rotate-3 rounded-sm w-[300px] h-[300px] md:w-[400px] md:h-[400px] lg:w-[460px] lg:h-[460px]"
+                  src="/photo/profile.jpg"
+                  alt="Profile"
+                  width={460}
+                  height={460}
+              />
           </div>
         </div>
       </section>
