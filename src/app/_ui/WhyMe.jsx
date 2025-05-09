@@ -10,7 +10,7 @@ export default function WhyMe() {
     <section id="why-me" className="container mt-5 lg:mt-0">
       <Subtitle text="Why Work With Me?" />
       <div className="mt-12 px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <ReasonCard
             title="Clean Code Advocate" 
             description="I enjoy writing clean, well-tested code following proven design patterns to create maintainable solutions that are easy to understand and scale."

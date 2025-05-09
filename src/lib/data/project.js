@@ -49,7 +49,7 @@ const projects = [
     ],
   },
   {
-    name: "La Routes des Langues",
+    name: "Routes des Langues",
     website: "https://www.laroutedeslangues.com/",
     description:
       "A web application for linguistic stay",

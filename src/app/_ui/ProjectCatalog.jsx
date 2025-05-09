@@ -16,7 +16,7 @@ export default function ProjectCatalog() {
         Here are some of the projects I&apos;ve worked on.
       </p>
       <div className="mt-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 px-4 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-4 gap-4">
             {projects.map((project) => (
                 <ProjectCard key={project.key} project={project} />
             ))}
