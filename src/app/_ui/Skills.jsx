@@ -9,7 +9,7 @@ const frontSkills = [
   },
   {
     src: "next",
-    label: "Next 13",
+    label: "Next",
   },
   {
     src: "flutter",
@@ -43,7 +43,7 @@ const backSkills = [
   },
   {
     src: "nodejs",
-    label: "Node",
+    label: "Node, Express, NestJS",
   },
   {
     src: "spring-boot",
@@ -54,7 +54,7 @@ const backSkills = [
 const databaseSkills = [
   {
     src: "postgresql",
-    label: "Postgres",
+    label: "Postgres, MySQL",
   },
   {
     src: "mongodb",
@@ -69,23 +69,22 @@ const databaseSkills = [
 const serviceSkills = [
   {
     src: "docker",
-    label: "Docker",
+    label: "Docker, Kubernetes",
   },
   {
     src: "git",
-    label: "Git",
+    label: "Git, Github, Gitlab",
   },
   {
-    src: "github",
-    label: "Github",
+    src: "openai",
+    label: "OpenAI, Langchain",
   },
 ];
 
 const toolsSkills = [
   {
-    src: "gitlab",
-    label: "Gitlab",
-    extension: "png"
+    src: "aws",
+    label: "Cloud, ECS, EC2, S3"
   },
   {
     src: "jira",
@@ -94,7 +93,7 @@ const toolsSkills = [
   },
   {
     src: "postman",
-    label: "Postman",
+    label: "Postman, Swagger",
   },
 ];
 

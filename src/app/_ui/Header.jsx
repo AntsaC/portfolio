@@ -8,12 +8,12 @@ import clsx from "clsx";
 
 const links = [
   {
-    text: "Hero",
-    href: "#hero",
-  },
-  {
     text: "Projects",
     href: "#projects",
+  },
+  {
+    text: "Why me?",
+    href: "#why-me",
   },
   {
     text: "Skills",
@@ -46,7 +46,7 @@ export default function Header() {
   return (
     <header className={`flex items-center justify-between flex-wrap px-4 lg:px-12 py-4 fixed top-0 w-full bg-background z-50 transition-all duration-300 ${show ? 'translate-y-0' : '-translate-y-full'}`}>
       <div className="flex items-center  text-white mr-6">
-        <Link href="/" className="font-semibold text-xl md:text-2xl tracking-tight" onClick={() => setShow(false)}>
+        <Link href="#hero" className="font-semibold text-xl md:text-2xl tracking-tight" onClick={() => setShow(false)}>
           Ina_Leka_Zao
         </Link>
       </div>

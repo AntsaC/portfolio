@@ -9,6 +9,13 @@ export default function WhyMe() {
   return (
     <section id="why-me" className="container mt-5 lg:mt-0">
       <Subtitle text="Why Work With Me?" />
+      <div className="mt-8 text-center px-4">
+        <p className="text-lg text-gray-300 max-w-3xl mx-auto">
+          With 3 years of fullstack development experience, I specialize in building end-to-end web applications. 
+          Most of my time is dedicated to freelance projects, where I&apos;ve successfully delivered various solutions 
+          while working independently and adapting to different business needs.
+        </p>
+      </div>
       <div className="mt-12 px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <ReasonCard
