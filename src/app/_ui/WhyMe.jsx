@@ -4,48 +4,48 @@ import React from "react";
 import { motion } from "framer-motion";
 import Subtitle from "./shared/Subtitle";
 import { Code2, Users, CheckCircle2, BookText, Book, Rocket, Heart, Ear } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 export default function WhyMe() {
+  const t = useTranslations("whyMe");
   return (
     <section id="why-me" className="container mt-5 lg:mt-0">
-      <Subtitle text="Why Work With Me?" />
+      <Subtitle text={t("title")} />
       <div className="mt-8 text-center px-4">
         <p className="text-lg text-gray-300 max-w-3xl mx-auto">
-          With 3 years of fullstack development experience, I specialize in building end-to-end web applications. 
-          Most of my time is dedicated to freelance projects, where I&apos;ve successfully delivered various solutions 
-          while working independently and adapting to different business needs.
+          {t("description")}
         </p>
       </div>
       <div className="mt-12 px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <ReasonCard
-            title="Clean Code Advocate" 
-            description="I enjoy writing clean, well-tested code following proven design patterns to create maintainable solutions that are easy to understand and scale."
+            title={t("reason1.title")} 
+            description={t("reason1.description")}
             icon={<Code2 className="w-8 h-8 text-emerald-400" />}
           />
           <ReasonCard
-            title="Quick Learner/Adaptor"
-            description="I grasp new technologies easily by focusing on core principles and patterns. I adapt quickly to deliver value with new tools and frameworks."
+            title={t("reason2.title")}
+            description={t("reason2.description")}
             icon={<Book className="w-8 h-8 text-emerald-400" />}
           />
           <ReasonCard
-            title="Business-Oriented Developer"
-            description="I excel at understanding business needs and delivering tailored solutions that align with business objectives. I leverage Domain-Driven Design principles to create impactful software."
+            title={t("reason3.title")}
+            description={t("reason3.description")}
             icon={<Ear className="w-8 h-8 text-emerald-400" />}
           />
           <ReasonCard
-            title="Team Player"
-            description="I excel in collaborative environments using Agile, Scrum methodologies and git. I believe great software is built by great teams working together."
+            title={t("reason4.title")}
+            description={t("reason4.description")}
             icon={<Users className="w-8 h-8 text-emerald-400" />}
           />
           <ReasonCard
-            title="Productivity Focused"
-            description="I leverage AI tools and modern development environments (Cursor, ChatGPT, etc.) to boost productivity while maintaining quality."
+            title={t("reason5.title")}
+            description={t("reason5.description")}
             icon={<Rocket className="w-8 h-8 text-emerald-400" />}
           />
           <ReasonCard 
-            title="Passionate Developer"
-            description="Last but not least, I'm a passionate developer :) "
+            title={t("reason6.title")}
+            description={t("reason6.description")}
             icon={<Heart className="w-8 h-8 text-emerald-400" />}
           />
         </div>

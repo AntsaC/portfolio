@@ -1,7 +1,7 @@
 import React from "react";
 import SkillContainer from "./SkillContainer";
 import Subtitle from "./shared/Subtitle";
-
+import { useTranslations } from "next-intl";
 const frontSkills = [
   {
     src: "reactjs",
@@ -98,17 +98,18 @@ const toolsSkills = [
 ];
 
 export default function Skills() {
+  const t = useTranslations("skills");
   return (
     <section id="skills" className="container mt-5 lg:mt-0">
-      <Subtitle text={"Technologies"} />
+      <Subtitle text={t("title")} />
       <div className="mt-14">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-8 gap-10 px-4">
           <SkillContainer skills={frontSkills} type={"Frontend"}/>
           <SkillContainer skills={apiSkills} type={"API"}/>
           <SkillContainer skills={backSkills} type={"Backend"}/>
-          <SkillContainer skills={databaseSkills} type={"Database"}/>
-          <SkillContainer skills={serviceSkills} type={"Tools"}/>
-          <SkillContainer skills={toolsSkills} type={"Other tools"}/>
+          <SkillContainer skills={databaseSkills} type={t("database")}/>
+          <SkillContainer skills={serviceSkills} type={t("tools")}/>
+          <SkillContainer skills={toolsSkills} type={t("otherTools")}/>
         </div>
       </div>
     </section>

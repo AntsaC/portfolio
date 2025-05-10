@@ -7,18 +7,21 @@ import Image from "next/image";
 import Link from "next/link";
 import projects from "@/lib/data/project";
 import { ArrowLeft, ArrowRight, X } from "lucide-react";
-export default function ProjectCatalog() {
+import { useTranslations } from "next-intl";
+
+export default function ProjectCatalog({locale}) {
+  const t = useTranslations("projects");
 
   return (
     <section id="projects" className="container mt-5 lg:mt-0">
-      <Subtitle text={"Projects"} />
+      <Subtitle text={t("title")} />
       <p className="text-slate-100 text-base mt-4 h-12 text-center">
-        Here are some of the projects I&apos;ve worked on.
+        {t("description")}
       </p>
       <div className="mt-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-4 gap-4">
             {projects.map((project) => (
-                <ProjectCard key={project.key} project={project} />
+                <ProjectCard key={project.key} project={project} locale={locale} />
             ))}
         </div>
       </div>
@@ -26,7 +29,7 @@ export default function ProjectCatalog() {
   );
 }
 
-const ProjectCard = ({ project }) => {
+const ProjectCard = ({ project, locale }) => {
 
   const [isOpen, setIsOpen] = useState(false);
 
@@ -60,7 +63,7 @@ const ProjectCard = ({ project }) => {
               }
             </h4>
             <p className="text-slate-100 text-base mt-1 h-12">
-              {project.description}
+              {project.description[locale]}
             </p>
             <div className="flex  mt-3">
               <div className="flex justify-around gap-2">

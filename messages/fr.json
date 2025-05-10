@@ -1,0 +1,77 @@
+{
+    "header": {
+        "projects": "Projets",
+        "whyMe": "Pourquoi moi ?",
+        "skills": "Compétences",
+        "contact": "Contact"
+    },
+    "hero": {
+        "title": "Hello world, je suis ",
+        "subtitle1": "Un Développeur FullStack",
+        "subtitle2": "passionné par",
+        "craft": [
+            "Application Web SSR",
+            "Application Web",
+            "Application RAD",
+            "Application Mobile", 
+            "Microservice"
+        ],
+        "cta": "Contactez-moi"
+    },
+    "projects": {
+        "title": "Projets",
+        "description": "Voici quelques projets sur lesquels j'ai travaillé."
+    },
+    "whyMe": {
+        "title": "Pourquoi moi ?",
+        "description": "Avec 3 ans d'expérience en développement fullstack, je suis spécialisé dans la création d'applications web de bout en bout. La majorité de mon temps est consacrée à des projets freelance, où j'ai réussi à livrer diverses solutions tout en travaillant de manière indépendante et en m'adaptant aux différents besoins des entreprises.",
+        "reason1": {
+            "title": "Défenseur du Code Propre",
+            "description": "J'aime écrire du code propre et bien testé en suivant des modèles de conception éprouvés pour créer des solutions maintenables, faciles à comprendre et à faire évoluer."
+        },
+        "reason2": {
+            "title": "Apprentissage/Adaptation Rapide",
+            "description": "Je maîtrise facilement les nouvelles technologies en me concentrant sur les principes et modèles fondamentaux. Je m'adapte rapidement pour apporter de la valeur avec de nouveaux outils et frameworks."
+        },
+        "reason3": {
+            "title": "Développeur Orienté Business",
+            "description": "J'excelle dans la compréhension des besoins commerciaux et la fourniture de solutions adaptées qui s'alignent sur les objectifs de l'entreprise. J'utilise les principes du Domain-Driven Design pour créer des logiciels impactants."
+        },
+        "reason4": {
+            "title": "Esprit d'Équipe",
+            "description": "J'excelle dans les environnements collaboratifs utilisant les méthodologies Agile, Scrum et git. Je crois que les grands logiciels sont construits par de grandes équipes travaillant ensemble."
+        },
+        "reason5": {
+            "title": "Axé sur la Productivité",
+            "description": "J'utilise des outils d'IA et des environnements de développement modernes (Cursor, ChatGPT, etc.) pour augmenter la productivité tout en maintenant la qualité."
+        },
+        "reason6": {
+            "title": "Développeur Passionné",
+            "description": "Dernier point mais non des moindres, je suis un développeur passionné :) "
+        }
+    },
+    "skills": {
+        "title": "Technologies",
+        "description": "Voici quelques-unes des technologies avec lesquelles j'ai travaillé.",
+        "database": "Base de données",
+        "tools": "Outils",
+        "otherTools": "Autres outils"
+    },
+    "topic": {
+        "title": "Sujets que je maîtrise"
+    },
+    "contact": {
+        "title": "Contactez-moi",
+        "description": "Je suis actuellement à la recherche de nouvelles opportunités. Que vous ayez une question ou que vous vouliez simplement dire bonjour, je ferai de mon mieux pour vous répondre !",
+        "name": "Nom",
+        "email": "Email",
+        "message": "Message",
+        "send": "Envoyer"
+    },
+    "footer": {
+        "build": "Construit avec",
+        "deployed": "Déployé sur ",
+        "copyright": "Copyright",
+        "allRightsReserved": "Tous droits réservés."
+    }
+}

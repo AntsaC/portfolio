@@ -2,17 +2,20 @@ import React from "react";
 import Image from "next/image";
 import CrafContainer from "./CrafItems";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 export default function Hero() {
+  const t = useTranslations("hero");
   return (
       <section id="hero" className="container md:mt-12 lg:mt-0 lg:h-dvh">
         <div className="flex flex-col h-full md:flex-row md:items-center md:justify-between gap-y-14 lg:gap-0">
           <div className="text-slate-200 text-center md:text-start">
-            <p className="text-2xl lg:text-3xl lg:inline">Hi there, I&apos;m </p>
-            <h1 className="lg:text-3xl lg:inline text-3xl text-emerald-400 font-bold">
-                Antsa Fiderana
+            <h1 className="text-2xl lg:text-3xl lg:inline"> {t("title")} 
+              <span className="lg:text-3xl lg:inline text-3xl text-emerald-400 font-bold">
+                  Antsa Fiderana
+              </span>
             </h1>
-            <h2 className="text-3xl lg:text-6xl lg:mt-10 font-semibold" >A FullStack Developer <br /> passionate about</h2>
+            <h2 className="text-3xl lg:text-6xl lg:mt-10 font-semibold" >{t("subtitle1")} <br /> {t("subtitle2")}</h2>
             <CrafContainer/>
             <div className="flex flex-col md:flex-row text-center">
               
@@ -20,7 +23,7 @@ export default function Hero() {
                   href="#contact"
                   className="bg-emerald-600 hover:scale-105 border border-emerald-600 text-white py-3 px-4 transition-all duration-300 rounded-sm ease-in-out mt-6 lg:mt-28"
               >
-                Let&apos;s work together
+                {t("cta")}
               </Link>
             </div>
           </div>

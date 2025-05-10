@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Subtitle from "./shared/Subtitle";
-
+import { useTranslations } from "next-intl";
 const topics = [
   "HTML",
   "CSS",
@@ -36,6 +36,7 @@ const topics = [
 ];
 
 export default function TopicSection() {
+  const t = useTranslations("topic");
   return (
       <div className="container mt-12 lg:mt-28">
         <div className="flex justify-around">
@@ -49,7 +50,7 @@ export default function TopicSection() {
           </div>
           <div>
             <div className="flex h-full justify-center items-center flex-col">
-              <Subtitle text={"Topics that I know"}/>
+              <Subtitle text={t("title")}/>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mt-8 px-4 md:px-0">
                 {topics.map((topic, index) => (
                     <TopicItem key={index} topic={topic}/>

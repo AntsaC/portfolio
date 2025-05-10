@@ -1,14 +1,16 @@
 const projects = [
   {
     name: "Jira clone",
-    description:
-      "A simple clone of the Jira software to manage agile projects",
+    description: {
+      en: "A simple clone of the Jira software to manage agile projects",
+      fr: "Un simple clone du logiciel Jira pour gérer les projets agiles"
+    },
     key: "Jira",
     thumbnail: "backlog.png",
     tags: ["React", "MUI", "Symfony", "Postgresql"],
     features: [
       "Authentication based on JWT",
-      "Projects management",
+      "Projects management", 
       "Product backlog",
       "Sprints management",
       "User stories management ",
@@ -51,8 +53,10 @@ const projects = [
   {
     name: "Routes des Langues",
     website: "https://www.laroutedeslangues.com/",
-    description:
-      "A web application for linguistic stay",
+    description: {
+      en: "A web application for linguistic stay",
+      fr: "Une application web pour les séjours linguistiques"
+    },
     key: "LRD",
     thumbnail: "hero.png",
     tags: ["Symfony", "Twig", "MariadDB", "Elasticsearch"],
@@ -99,8 +103,10 @@ const projects = [
   },
   {
     name: "Keiron Education",
-    description:
-      "A web application for linguistic stay",
+    description: {
+      en: "A web application for linguistic stay",
+      fr: "Une application web pour les séjours linguistiques"
+    },
     key: "KE",
     website: "https://www.keiron-education.com/",
     thumbnail: "home.png",
@@ -148,8 +154,10 @@ const projects = [
   },
   {
     name: "Séjours Home Abroad",
-    description:
-      "A web application for linguistic stay",
+    description: {
+      en: "A web application for linguistic stay",
+      fr: "Une application web pour les séjours linguistiques"
+    },
     key: "SHA",
     website: "https://www.sejours-homeabroad.com/",
     thumbnail: "home.png",
@@ -197,8 +205,10 @@ const projects = [
   },
   {
     name: "Motorcycle garage",
-    description:
-      "A web application to manage motorcycle garage",
+    description: {
+      en: "A web application to manage motorcycle garage",
+      fr: "Une application web pour gérer un garage de motos"
+    },
     key: "MGC",
     thumbnail: "maintenance.png",
     tags:["Symfony", "Twig", "Mysql"],
@@ -245,8 +255,10 @@ const projects = [
   },
   {
     name: "In'liso",
-    description:
-      "A web application for apartment rentals",
+    description: {
+      en: "A web application for apartment rentals",
+      fr: "Une application web pour la location d'appartements"
+    },
     key: "IL",
     thumbnail: "home.png",
     tags: ["Laravel", "Next JS", "Tailwind CSS", "Mysql"],
@@ -293,8 +305,10 @@ const projects = [
   },
   {
     name: "Byd",
-    description:
-      "Showcase website for BYD to display its electric vehicle catalogs.",
+    description: {
+      en: "Showcase website for BYD to display its electric vehicle catalogs.",
+      fr: "Site vitrine pour BYD pour afficher ses catalogues de véhicules électriques."
+    },
     key: "BYD",
     website: "https://www.byd.mq",
     thumbnail: "home.png",
@@ -342,8 +356,10 @@ const projects = [
   },
   {
     name: "Fleet management",
-    description:
-      "Platform (a web app with mobile app) to manage fleets of companies",
+    description: {
+      en: "Platform (a web app with mobile app) to manage fleets of companies",
+      fr: "Plateforme (application web avec application mobile) pour gérer les flottes d'entreprises"
+    },
     key: "Fleet",
     thumbnail: "map.PNG",
     tags: ["React", "Quarkus", "Firebase", "Flutter"],
@@ -374,7 +390,10 @@ const projects = [
   },
   {
     name: "Portfolio",
-    description: "My portfolio as a full stack developper",
+    description: {
+      en: "My portfolio as a full stack developper",
+      fr: "Mon portfolio en tant que développeur full stack"
+    },
     key: "Portfolio",
     thumbnail: "hero.PNG",
     code: [

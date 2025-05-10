@@ -1,8 +1,10 @@
 "use client";
 
 import React, { useState } from "react";
+import { useTranslations } from "next-intl";
 
 export default function Contact() {
+  const t = useTranslations("contact");
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -27,16 +29,15 @@ export default function Contact() {
 
   return (
     <section id="contact" className="container py-20">
-      <h2 className="text-3xl font-bold text-slate-200 text-center mb-10">Get In Touch</h2>
+      <h2 className="text-3xl font-bold text-slate-200 text-center mb-10">{t("title")}</h2>
       <div className="flex flex-col items-center gap-6 text-slate-300">
         <p className="text-center max-w-2xl">
-          I&apos;m currently looking for new opportunities. Whether you have a question or just want to say hi, 
-          I&apos;ll try my best to get back to you!
+          {t("description")}
         </p>
         
         <form onSubmit={handleSubmit} className="w-full max-w-lg space-y-4">
           <div>
-            <label htmlFor="name" className="block mb-2">Name</label>
+            <label htmlFor="name" className="block mb-2">{t("name")}</label>
             <input
               type="text"
               id="name"
@@ -49,7 +50,7 @@ export default function Contact() {
           </div>
           
           <div>
-            <label htmlFor="email" className="block mb-2">Email</label>
+            <label htmlFor="email" className="block mb-2">{t("email")}</label>
             <input
               type="email"
               id="email"
@@ -62,7 +63,7 @@ export default function Contact() {
           </div>
           
           <div>
-            <label htmlFor="message" className="block mb-2">What&apos;s on your mind?</label>
+            <label htmlFor="message" className="block mb-2">{t("message")}</label>
             <textarea
               id="message"
               name="message"
@@ -78,7 +79,7 @@ export default function Contact() {
             type="submit"
             className="w-full bg-emerald-600 hover:scale-105 border border-emerald-600 text-white py-3 px-8 transition-all duration-300 rounded-sm ease-in-out"
           >
-            Send Message
+            {t("send")}
           </button>
         </form>
       </div>
