@@ -3,71 +3,85 @@
 import React, { useRef } from "react";
 import SkillCard from "./SkillCard";
 import { motion, useInView } from "framer-motion";
-import "./SkillContainer.css";
 
 export default function SkillContainer({ type, skills }) {
   const ref = useRef(null);
-  const isInView = useInView(ref);
+  const isInView = useInView(ref, { once: true, margin: "-100px" });
 
-  const variants = {
-    hidden: { opacity: 0 },
+  const containerVariants = {
+    hidden: { opacity: 0, y: 50 },
     show: {
       opacity: 1,
+      y: 0,
       transition: {
-        staggerChildren: 0.4,
+        duration: 0.6,
+        staggerChildren: 0.1,
+        delayChildren: 0.2,
       },
     },
   };
 
-  const draw = {
-    hidden: { pathLength: 0, opacity: 0 },
+  const borderVariants = {
+    hidden: { 
+      pathLength: 0, 
+      opacity: 0,
+      stroke: "rgba(16, 185, 129, 0.3)"
+    },
     show: {
       pathLength: 1,
       opacity: 1,
+      stroke: "rgba(16, 185, 129, 0.8)",
       transition: {
-        pathLength: { type: "spring", duration: 2, bounce: 0 },
+        pathLength: { 
+          type: "spring", 
+          duration: 2.5, 
+          bounce: 0.3,
+          ease: "easeInOut"
+        },
+        stroke: { duration: 0.5, delay: 1.5 }
       },
     },
   };
 
   return (
     <motion.div
-      className="relative w-full card h-96 py-1 lg:py-5"
-      variants={variants}
+      ref={ref}
+      className="modern-card relative w-full h-[400px] p-6 group overflow-hidden"
+      variants={containerVariants}
       initial="hidden"
-      animate={isInView && "show"}
+      animate={isInView ? "show" : "hidden"}
       whileHover={{
-        y: -5,
+        y: -8,
+        scale: 1.02,
       }}
+      transition={{ type: "spring", stiffness: 300, damping: 30 }}
     >
+      <div className="absolute inset-0 bg-gradient-to-br from-accent-primary/5 via-transparent to-accent-secondary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+      
       <motion.svg
         width="100%"
         height="100%"
-        className="absolute top-0 text-emerald-600"
+        className="absolute inset-0"
       >
         <motion.rect
-          width="100%"
-          height="100%"
-          rx="2"
+          width="calc(100% - 2px)"
+          height="calc(100% - 2px)"
+          x="1"
+          y="1"
+          rx="12"
           strokeWidth={2}
           fill="none"
-          stroke="currentColor"
-          variants={draw}
-          custom={3}
+          variants={borderVariants}
         />
       </motion.svg>
-      <h5
-        className="text-xl md:text-2xl absolute left-1/2 transform -translate-x-1/2 text-emerald-600 bg-background px-1 font-semibold"
-        style={{ top: -20, backgroundColor: "rgba(6,28,34,0.62)" }}
-      >
-        {type}
-      </h5>
-      <div className="flex flex-col justify-around h-full  ">
-        {skills.map((skill, index) => (
-          <SkillCard key={index} {...skill} />
-        ))}
+      
+      <div className="flex flex-col h-full">
+        <div className="flex flex-col justify-center items-center flex-1 gap-2">
+          {skills.map((skill, index) => (
+            <SkillCard key={index} {...skill} index={index} />
+          ))}
+        </div>
       </div>
-      <span ref={ref}></span>
     </motion.div>
   );
 }

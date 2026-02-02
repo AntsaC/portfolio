@@ -2,27 +2,93 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  font-size: 1rem;
-  scroll-behavior: smooth;
-}
+@layer base {
+  html {
+    font-size: 1rem;
+    scroll-behavior: smooth;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
 
-body {
-  background-color: #061c22;
-}
+  body {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+    background-attachment: fixed;
+    color: #f1f5f9;
+    font-family: system-ui, -apple-system, sans-serif;
+    line-height: 1.6;
+  }
 
-section {
-  padding: 32px 0px;
-}
-
-@media (min-width: 768px) {
   section {
-    padding: 40px 0px;
+    padding: 32px 0px;
+  }
+
+  @media (min-width: 768px) {
+    section {
+      padding: 40px 0px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    section {
+      padding: 64px 0px;
+    }
   }
 }
 
-@media (min-width: 1024px) {
-  section {
-    padding: 64px 0px;
+@layer components {
+  .glass-effect {
+    background: rgba(30, 41, 59, 0.8);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .modern-card {
+    background: linear-gradient(145deg, #1e293b 0%, #334155 100%);
+    border-radius: 0.75rem;
+    border: 1px solid rgba(16, 185, 129, 0.2);
+    transition: all 0.3s ease;
+  }
+
+  .modern-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3), 0 0 20px rgba(16, 185, 129, 0.2);
+  }
+
+  .glow-button {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+    box-shadow: 0 4px 20px rgba(16, 185, 129, 0.4);
+    transition: all 0.3s ease;
+  }
+
+  .glow-button:hover {
+    box-shadow: 0 8px 30px rgba(16, 185, 129, 0.6);
+    transform: translateY(-2px);
+  }
+
+  .text-gradient {
+    background: linear-gradient(135deg, #10b981 0%, #06b6d4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
+
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  .scroll-indicator {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #10b981, #06b6d4);
+    z-index: 9999;
+    transition: width 0.3s ease;
   }
 }
